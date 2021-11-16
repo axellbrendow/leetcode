@@ -27,5 +27,6 @@ def is_valid_tree(num_nodes, edges):
 	graph = build_graph(edges)
 	return not has_cycle(graph)
 
+assert is_valid_tree(5, [[0, 1], [0, 0], [2, 3]]) == False
 assert is_valid_tree(5, [[0, 1], [0, 2], [0, 3], [1, 4]]) == True
 assert is_valid_tree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]) == False
