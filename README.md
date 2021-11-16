@@ -96,6 +96,14 @@ https://docs.google.com/document/d/1Y7r7ufeYOItC3WUp7Jp9tMZEY94I3vbvtucLDB6sYkk/
 
 ----------------------------
 
+String & Hash Table & Queue & Priority Queue & Heap
+
+HARD https://leetfree.com/problems/rearrange-string-k-distance-apart
+<br>
+https://docs.google.com/document/d/1D8PxggBxXur2F_j88idudqMeHGlgswZWU9jf4ESWwcQ/edit
+
+----------------------------
+
 Matrix
 
 MEDIUM https://leetfree.com/problems/bomb-enemy
