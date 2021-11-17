@@ -454,6 +454,14 @@ https://docs.google.com/document/d/1m2N8KaJwvExYCB2hW6JvySN8ICc-stj6kntYYy-7LVE/
 
 ----------------------------
 
+Graph & Adjacency Matrix & Heap
+
+HARD https://leetfree.com/problems/optimal-account-balancing
+<br>
+https://docs.google.com/document/d/1iHGo0aUm58Tnj3ZPliU0iZp0SispAR3q7IHPQawIW08/edit
+
+----------------------------
+
 Graph & DFS & BFS & Topological Sort
 
 MEDIUM https://leetfree.com/problems/sentence-similarity-ii
