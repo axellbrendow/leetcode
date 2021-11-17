@@ -362,6 +362,14 @@ EASY https://leetcode.com/problems/climbing-stairs/
 
 ----------------------------
 
+Heap & Set
+
+MEDIUM https://leetfree.com/problems/design-phone-directory
+<br>
+https://docs.google.com/document/d/17QdFcANghw2OGdcIynyF-yT5ug_wn76chhIK4EwITho/edit
+
+----------------------------
+
 LinkedList & Divide and Conquer & Heap (Priority Queue) & Merge Sort
 
 HARD https://leetcode.com/problems/merge-k-sorted-lists/
