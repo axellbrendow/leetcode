@@ -18,6 +18,14 @@ https://docs.google.com/document/d/1y9n2jzpYIeEjF-1bxq2V81_0ZioqLGV22PKLxwqD4Kg/
 
 ----------------------------
 
+String & Matching & Join Ranges
+
+MEDIUM https://leetfree.com/problems/add-bold-tag-in-string
+<br>
+https://docs.google.com/document/d/1BqlWdCYajS5cN1qHszuftx7ltCua9i98lRWt_k1d69A/edit
+
+----------------------------
+
 String & Palindrome
 
 EASY https://leetfree.com/problems/palindrome-permutation
