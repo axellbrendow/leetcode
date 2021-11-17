@@ -26,6 +26,14 @@ https://docs.google.com/document/d/1F3WCxkR8V7a4W5whUwktMMQGnNAEJdrutdrGRW6y_aU/
 
 ----------------------------
 
+String & Two Pointers
+
+MEDIUM https://leetfree.com/problems/output-contest-matches
+<br>
+https://docs.google.com/document/d/1bWcXT3AP2KddIPTd0gHTKEB3Jjjas1mZYRK195Oze98/edit
+
+----------------------------
+
 String & Bit Manipulation
 
 MEDIUM https://leetfree.com/problems/generalized-abbreviation
