@@ -140,6 +140,10 @@ MEDIUM https://leetfree.com/problems/android-unlock-patterns
 <br>
 https://docs.google.com/document/d/1zDOYPIJSyxBMos7va94Ckj3ts0i7ealz2U9DpLN_Lc0/edit
 
+HARD https://leetfree.com/problems/smallest-rectangle-enclosing-black-pixels
+<br>
+https://docs.google.com/document/d/1ET7ePcPUOvzbWIqh2YXeviYGDEVWIuE2M3s9Q8MKbWM/edit
+
 ----------------------------
 
 Matrix & DFS & BFS & Union Find
