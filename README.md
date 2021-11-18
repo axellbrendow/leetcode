@@ -460,6 +460,10 @@ MEDIUM https://leetfree.com/problems/graph-valid-tree
 <br>
 https://docs.google.com/document/d/1m2N8KaJwvExYCB2hW6JvySN8ICc-stj6kntYYy-7LVE/edit
 
+MEDIUM https://leetfree.com/problems/number-of-connected-components-in-an-undirected-graph
+<br>
+https://docs.google.com/document/d/1z45PvOHQFgWFJRY-A4aYN3FRZ_fS8iD6K6S7xqagENs/edit
+
 ----------------------------
 
 Graph & Adjacency Matrix & Heap
