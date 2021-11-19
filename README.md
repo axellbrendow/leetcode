@@ -132,6 +132,14 @@ https://docs.google.com/document/d/1sESwb_asGvDpeqMkJGzku_DTzj7z7DBLhFxF6m_c0bc/
 
 ----------------------------
 
+Matrix & Dynamic Programming
+
+MEDIUM https://leetfree.com/problems/longest-line-of-consecutive-one-in-matrix
+<br>
+https://docs.google.com/document/d/1beHxEeKpQoh1KNxfFlKUJS6zmMcyknhYRGi77h6mTM4/edit
+
+----------------------------
+
 Matrix & DFS & BFS
 
 MEDIUM https://leetcode.com/problems/pacific-atlantic-water-flow/
