@@ -186,6 +186,10 @@ MEDIUM https://leetfree.com/problems/missing-ranges
 <br>
 https://docs.google.com/document/d/1Ja_IOhCeOFFnQvXZYY6-gHclS3aSrQmm1YZPLlJa_kU/edit
 
+MEDIUM https://leetfree.com/problems/range-addition
+<br>
+https://docs.google.com/document/d/14RBUkiYomXDZMck06rABbb8ztrZy9SammX5hwM7Tqjs/edit
+
 ----------------------------
 
 Array & Math
