@@ -160,6 +160,10 @@ HARD https://leetfree.com/problems/smallest-rectangle-enclosing-black-pixels
 <br>
 https://docs.google.com/document/d/1ET7ePcPUOvzbWIqh2YXeviYGDEVWIuE2M3s9Q8MKbWM/edit
 
+MEDIUM https://leetfree.com/problems/the-maze
+<br>
+https://docs.google.com/document/d/1--2Chf6rpQ-W_INcaTpME-k8WhuZqXSdJ3Gbz1ldRtc/edit
+
 ----------------------------
 
 Matrix & DFS & BFS & Union Find
