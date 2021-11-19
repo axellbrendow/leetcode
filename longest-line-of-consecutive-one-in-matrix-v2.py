@@ -15,16 +15,16 @@ def build_anti_diags(nlines, ncolumns):
 	return diags
 
 def get_main_diag(i, j):
-	while i != 0 and j != 0:
-		i -= 1
-		j -= 1
-	return (i, j)
+	min_index = min(i, j)
+	return (i - min_index, j - min_index)
 
 def get_anti_diag(i, j, ncolumns):
-	while i != 0 and j < ncolumns - 1:
-		i -= 1
-		j += 1
-	return (i, j)
+	line_offset = i
+	column_offset = (ncolumns - 1) - j
+	if line_offset <= column_offset:
+		return (0, j + line_offset)
+	else:
+		return (i - column_offset, ncolumns - 1)
 
 def find_longest_line_of_consecutive_one(matrix):
 	nlines = len(matrix)
