@@ -78,6 +78,10 @@ HARD https://leetcode.com/problems/regular-expression-matching/
 
 MEDIUM https://leetcode.com/problems/generate-parentheses/
 
+HARD https://leetfree.com/problems/encode-string-with-shortest-length
+<br>
+https://docs.google.com/document/d/1kOaG2lJreQoh_Gua7b6ROoHxJuUr7o38b2GekviOMe8/edit
+
 ----------------------------
 
 String & Sliding Window & Hash Table
