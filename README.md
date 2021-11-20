@@ -164,6 +164,10 @@ MEDIUM https://leetfree.com/problems/the-maze
 <br>
 https://docs.google.com/document/d/1--2Chf6rpQ-W_INcaTpME-k8WhuZqXSdJ3Gbz1ldRtc/edit
 
+MEDIUM https://leetfree.com/problems/the-maze-ii
+<br>
+https://docs.google.com/document/d/1tBUfBSAhNu4yff6CKifzNVBRQ7DOBf2o6Crhru8CR08/edit
+
 ----------------------------
 
 Matrix & DFS & BFS & Union Find
