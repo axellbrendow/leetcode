@@ -388,6 +388,14 @@ https://docs.google.com/document/d/1aejnbmxBG1oHv97JTHeXhJTBxghltwvgXYqk4khIATY/
 
 ----------------------------
 
+Queue & Set & Design
+
+MEDIUM https://leetfree.com/problems/design-snake-game
+<br>
+https://docs.google.com/document/d/1lpPeoaG1igWP3e7Py6uTtRyPk2WmM-Z_BEFzP9nrRnQ/edit
+
+----------------------------
+
 Queue & Stream & Greedy
 
 EASY https://leetfree.com/problems/moving-average-from-data-stream
