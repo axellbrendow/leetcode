@@ -500,6 +500,12 @@ MEDIUM https://leetfree.com/problems/number-of-connected-components-in-an-undire
 <br>
 https://docs.google.com/document/d/1z45PvOHQFgWFJRY-A4aYN3FRZ_fS8iD6K6S7xqagENs/edit
 
+HARD https://leetfree.com/problems/maximum-vacation-days
+<br>
+https://www.lintcode.com/problem/874/description
+<br>
+https://docs.google.com/document/d/1hQU4OmHxtBMVi_n61baYd3CghrsfP8ACxh0k-3QiEhI/edit
+
 ----------------------------
 
 Graph & Adjacency Matrix & Heap
