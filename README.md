@@ -114,6 +114,10 @@ MEDIUM https://leetfree.com/problems/unique-word-abbreviation
 <br>
 https://docs.google.com/document/d/1Y7r7ufeYOItC3WUp7Jp9tMZEY94I3vbvtucLDB6sYkk/edit
 
+EASY https://leetfree.com/problems/sentence-similarity
+<br>
+https://docs.google.com/document/d/1iV9xPZ1EdRiCTHY4FGlT44Sw9bLOS08E8U4lyRWmaJo/edit
+
 ----------------------------
 
 String & Hash Table & Queue & Priority Queue & Heap
