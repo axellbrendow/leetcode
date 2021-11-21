@@ -470,6 +470,12 @@ MEDIUM https://leetfree.com/problems/binary-tree-longest-consecutive-sequence
 <br>
 https://docs.google.com/document/d/12FVRHPxu1ZkRZWx1rAYOo7VYXegUGDztf_c7WnlwMEY/edit
 
+MEDIUM https://leetfree.com/problems/binary-tree-longest-consecutive-sequence-ii
+<br>
+https://www.lintcode.com/problem/binary-tree-longest-consecutive-sequence-ii/description
+<br>
+https://docs.google.com/document/d/1oV4VSQE-KJADw-pR7cdj2Ixl-8r9nRyeyZrgvbof_2M/edit
+
 HARD https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
 <br>
 https://leetfree.com/problems/binary-tree-vertical-order-traversal
