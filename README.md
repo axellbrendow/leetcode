@@ -535,3 +535,11 @@ MEDIUM https://leetcode.com/problems/course-schedule-ii/
 HARD https://leetfree.com/problems/alien-dictionary
 <br>
 https://docs.google.com/document/d/1qszcdc5o4eMnMB8F26krRh7XmbRVvq6Uux-wouDboAU/edit
+
+----------------------------
+
+SQL
+
+HARD https://leetfree.com/problems/median-employee-salary
+<br>
+https://docs.google.com/document/d/1XBQ6wDQWQRTGCKJrYJ4pnZDLHvkpZu9Vc04OHjinQBI/edit
