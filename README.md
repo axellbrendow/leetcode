@@ -206,6 +206,12 @@ MEDIUM https://leetfree.com/problems/range-addition
 <br>
 https://docs.google.com/document/d/14RBUkiYomXDZMck06rABbb8ztrZy9SammX5hwM7Tqjs/edit
 
+MEDIUM https://leetfree.com/problems/find-permutation
+<br>
+https://www.lintcode.com/problem/884/description
+<br>
+https://docs.google.com/document/d/1bqXz3IeRzOKjcBVQ-pxFR-qVxfoT2pw3Tq63Qwvuj3U/edit
+
 ----------------------------
 
 Array & Math
