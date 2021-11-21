@@ -5,43 +5,28 @@ class Node:
 		self.left = left
 
 def get_longest_consecutive_path(root):
-	def dfs(node):  # node = 1
-		increasing, decreasing, max_path = 1, 1, 1  # 2, 1, 2
-		left_decreasing, left_increasing = False, False  # False, True
-		right_decreasing, right_increasing = False, False  # False, False
-		increasing_l, decreasing_l, max_path_l = 0, 0, 0
-		increasing_r, decreasing_r, max_path_r = 0, 0, 0
-		if node.left:
-			increasing_l, decreasing_l, max_path_l = dfs(node.left)
-			max_path = max(max_path, max_path_l)
-			if abs(node.val - node.left.val) == 1:
-				if node.left.val <= node.val:
-					left_decreasing = True
-					decreasing = max(decreasing, 1 + decreasing_l)
-				if node.left.val >= node.val:
-					left_increasing = True
-					increasing = max(increasing, 1 + increasing_l)
-		if node.right:
-			increasing_r, decreasing_r, max_path_r = dfs(node.right)
-			max_path = max(max_path, max_path_r)
-			if abs(node.val - node.right.val) == 1:
-				if node.right.val <= node.val:
-					right_decreasing = True
-					decreasing = max(decreasing, 1 + decreasing_r)
-				if node.right.val >= node.val:
-					right_increasing = True
-					increasing = max(increasing, 1 + increasing_r)
-		if (
-			node.left and node.right
-			and abs(node.val - node.left.val) == 1
-			and abs(node.val - node.right.val) == 1
-		):
-			if left_increasing and right_decreasing:
-				max_path = max(max_path, 1 + increasing_l + decreasing_r)
-			if left_decreasing and right_increasing:
-				max_path = max(max_path, 1 + decreasing_l + increasing_r)
-		max_path = max(max_path, increasing, decreasing)
-		return increasing, decreasing, max_path
+	def dfs(node):
+		if not node: return 0, 0, 0
+
+		incr_l, decr_l, max_path_l = dfs(node.left)
+		incr_r, decr_r, max_path_r = dfs(node.right)
+
+		incr, decr, max_path = 0, 0, 1
+
+		if (node.left and abs(node.val - node.left.val) == 1):
+			if (node.left.val <= node.val):
+				decr = max(decr, 1 + decr_l)
+			if (node.left.val >= node.val):
+				incr = max(incr, 1 + incr_l)
+
+		if (node.right and abs(node.val - node.right.val) == 1):
+			if (node.right.val <= node.val):
+				decr = max(decr, 1 + decr_r)
+			if (node.right.val >= node.val):
+				incr = max(incr, 1 + incr_r)
+
+		max_path = max(max_path, max_path_l, max_path_r, 1 + incr + decr)
+		return incr, decr, max_path
 	return dfs(root)[2]
 
 root = Node(0)
