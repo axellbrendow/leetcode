@@ -140,6 +140,16 @@ https://docs.google.com/document/d/1sESwb_asGvDpeqMkJGzku_DTzj7z7DBLhFxF6m_c0bc/
 
 ----------------------------
 
+Matrix & Hash Table
+
+MEDIUM https://leetfree.com/problems/lonely-pixel-ii
+<br>
+https://www.lintcode.com/problem/881/description
+<br>
+https://docs.google.com/document/d/1BjdZ_Jgt0uNX_x6eSYL-M0Py4OIdlF78wUo6k4CtF_c/edit
+
+----------------------------
+
 Matrix & Dynamic Programming
 
 MEDIUM https://leetfree.com/problems/longest-line-of-consecutive-one-in-matrix
