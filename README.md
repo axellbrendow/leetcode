@@ -424,6 +424,12 @@ Dynamic Programming
 
 EASY https://leetcode.com/problems/climbing-stairs/
 
+MEDIUM https://leetfree.com/problems/4-keys-keyboard
+<br>
+https://www.lintcode.com/problem/867/description
+<br>
+https://docs.google.com/document/d/1wBJXFYNneUSnk2Lkk5mKKXcntORRx_YJpcTY5fNIu1U/edit
+
 ----------------------------
 
 Heap & Set
