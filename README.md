@@ -16,6 +16,10 @@ MEDIUM https://leetfree.com/problems/encode-and-decode-strings
 <br>
 https://docs.google.com/document/d/1y9n2jzpYIeEjF-1bxq2V81_0ZioqLGV22PKLxwqD4Kg/edit
 
+EASY https://leetfree.com/problems/design-compressed-string-iterator
+<br>
+https://docs.google.com/document/d/1jwyDpqCi3ijegZEHsvwvSA2wWzLknlhm4Tukxu4C83o/edit
+
 ----------------------------
 
 String & Matching & Join Ranges
