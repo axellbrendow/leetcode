@@ -354,6 +354,12 @@ HARD https://leetfree.com/problems/k-empty-slots
 <br>
 https://docs.google.com/document/d/1YwPH2s6M0JJDx-gqkpYMoaMBrHvxXry4Cy7Om4xFTrU/edit
 
+MEDIUM https://leetfree.com/problems/max-consecutive-ones-ii
+<br>
+https://www.lintcode.com/problem/max-consecutive-ones-ii/description
+<br>
+https://docs.google.com/document/d/1Nn5ax6wKPqaJfpCI5KgFEOpGiTR4JJthWq__ESGqONA/edit
+
 ----------------------------
 
 Array & Sorting & Sliding Window
