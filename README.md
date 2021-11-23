@@ -138,6 +138,10 @@ MEDIUM https://leetfree.com/problems/sentence-screen-fitting
 <br>
 https://docs.google.com/document/d/1sESwb_asGvDpeqMkJGzku_DTzj7z7DBLhFxF6m_c0bc/edit
 
+MEDIUM https://leetcode.com/problems/game-of-life/
+<br>
+https://docs.google.com/document/d/1Qq0FKhJHcTy5UnP6dy0rp7eRUMmwPsCCw-6e1mg1Y84/edit
+
 ----------------------------
 
 Matrix & Hash Table
