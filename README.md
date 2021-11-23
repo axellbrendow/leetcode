@@ -232,6 +232,16 @@ https://docs.google.com/document/d/1dt27fssDRLLJVXbNYUGYcjWFaihMaXSi1knJZycwO3c/
 
 ----------------------------
 
+Array & Math & Set
+
+MEDIUM https://leetfree.com/problems/line-reflection
+<br>
+https://www.lintcode.com/problem/line-reflection/description
+<br>
+https://docs.google.com/document/d/1hacMUc89PQd1zgLrD32PWHUdO8ox7wXk1ciR21sqaP8/edit
+
+----------------------------
+
 Array & Binary Search & Divide and Conquer
 
 HARD https://leetcode.com/problems/median-of-two-sorted-arrays/
