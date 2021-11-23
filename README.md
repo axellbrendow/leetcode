@@ -142,6 +142,12 @@ MEDIUM https://leetcode.com/problems/game-of-life/
 <br>
 https://docs.google.com/document/d/1Qq0FKhJHcTy5UnP6dy0rp7eRUMmwPsCCw-6e1mg1Y84/edit
 
+EASY https://leetfree.com/problems/valid-word-square
+<br>
+https://www.lintcode.com/problem/888/description
+<br>
+https://docs.google.com/document/d/181nKMHO9HB6k6HBfg3ujYIG4-1xkJVZd7eTI0Tz2u8c/edit
+
 ----------------------------
 
 Matrix & Hash Table
