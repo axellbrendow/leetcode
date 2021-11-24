@@ -588,6 +588,12 @@ HARD https://leetfree.com/problems/alien-dictionary
 <br>
 https://docs.google.com/document/d/1qszcdc5o4eMnMB8F26krRh7XmbRVvq6Uux-wouDboAU/edit
 
+MEDIUM https://leetfree.com/problems/sequence-reconstruction
+<br>
+https://www.lintcode.com/problem/605/description
+<br>
+https://docs.google.com/document/d/1IFKcopuk7AOY8M0B7ZdMCPHRHLLHi6rhzvGrqpyp85Q/edit
+
 ----------------------------
 
 SQL
