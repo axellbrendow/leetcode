@@ -306,6 +306,16 @@ https://docs.google.com/document/d/1go8k2uEkaLhj443ZirLInnWY7r6MEu_-Ey2Sv84J67E/
 
 ----------------------------
 
+Array & Dynamic Programming & Queue & Monotonic Queue
+
+HARD https://leetfree.com/problems/coin-path
+<br>
+https://www.lintcode.com/problem/866/description
+<br>
+https://docs.google.com/document/d/1Qs_RaR8uvE8KQ-l4FSIgfqx02LjIRD2E24tM2GSjxmc/edit
+
+----------------------------
+
 Array & Sorting & Heap & Greedy
 
 MEDIUM https://leetfree.com/problems/meeting-rooms-ii.html
