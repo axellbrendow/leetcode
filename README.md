@@ -22,6 +22,16 @@ https://docs.google.com/document/d/1jwyDpqCi3ijegZEHsvwvSA2wWzLknlhm4Tukxu4C83o/
 
 ----------------------------
 
+String & Matching
+
+EASY https://leetfree.com/problems/valid-word-abbreviation
+<br>
+https://www.lintcode.com/problem/637/description
+<br>
+https://docs.google.com/document/d/1WnDy1rZC37ftH6gZVdlBUDc5G-avLGezxxRQ4ZQfBGE/edit
+
+----------------------------
+
 String & Matching & Join Ranges
 
 MEDIUM https://leetfree.com/problems/add-bold-tag-in-string
