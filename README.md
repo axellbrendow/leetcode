@@ -166,6 +166,10 @@ https://docs.google.com/document/d/181nKMHO9HB6k6HBfg3ujYIG4-1xkJVZd7eTI0Tz2u8c/
 
 Matrix & Hash Table
 
+MEDIUM https://leetfree.com/problems/lonely-pixel-i
+<br>
+https://docs.google.com/document/d/1BdeZmyG5TpvQQZtbN5ugaWd_dRk7h_Ud3P7dO7YPGt0/edit
+
 MEDIUM https://leetfree.com/problems/lonely-pixel-ii
 <br>
 https://www.lintcode.com/problem/881/description
