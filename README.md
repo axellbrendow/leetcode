@@ -600,6 +600,10 @@ https://www.lintcode.com/problem/874/description
 <br>
 https://docs.google.com/document/d/1hQU4OmHxtBMVi_n61baYd3CghrsfP8ACxh0k-3QiEhI/edit
 
+HARD https://leetcode.com/problems/reconstruct-itinerary/
+<br>
+https://docs.google.com/document/d/1LxFSfPXpHg6mQQlb1vn9B7tmpw3bQlvaP1kNDz9nwkk/edit
+
 ----------------------------
 
 Graph & Adjacency Matrix & Heap
