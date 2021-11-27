@@ -586,6 +586,8 @@ Graph & DFS
 
 MEDIUM https://leetfree.com/problems/graph-valid-tree
 <br>
+https://www.lintcode.com/problem/178/description
+<br>
 https://docs.google.com/document/d/1m2N8KaJwvExYCB2hW6JvySN8ICc-stj6kntYYy-7LVE/edit
 
 MEDIUM https://leetfree.com/problems/number-of-connected-components-in-an-undirected-graph
