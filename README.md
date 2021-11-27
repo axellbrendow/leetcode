@@ -96,6 +96,12 @@ HARD https://leetfree.com/problems/encode-string-with-shortest-length
 <br>
 https://docs.google.com/document/d/1kOaG2lJreQoh_Gua7b6ROoHxJuUr7o38b2GekviOMe8/edit
 
+HARD https://leetfree.com/problems/minimum-window-subsequence
+<br>
+https://www.lintcode.com/problem/857/description
+<br>
+https://docs.google.com/document/d/1Bg7At3-GnxwVI8P4H5dlkt7gF7kF0lHpjvwJu11lIJ0/edit
+
 ----------------------------
 
 String & Sliding Window & Hash Table
