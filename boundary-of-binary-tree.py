@@ -12,9 +12,9 @@ def get_anti_clockwise_boundary_of_binary_tree(root):
 	def get_left_boundary(node):
 		if not node: return
 		if not node.left and not node.right: return
+		boundary.append(node.val)
 		if node.left: get_left_boundary(node.left)
 		else: get_left_boundary(node.right)
-		boundary.append(node.val)
 
 	def get_right_boundary(node):
 		if not node: return
@@ -34,13 +34,23 @@ def get_anti_clockwise_boundary_of_binary_tree(root):
 	get_left_boundary(root.left)
 	get_leaves(root)
 	get_right_boundary(root.right)
-	output = []
-	helper_set = set()
-	for val in boundary:
-		if val in helper_set: continue
-		helper_set.add(val)
-		output.append(val)
-	return output
+	return boundary
+
+tree = Node(
+	4,
+	None,
+	Node(
+		1,
+		None,
+		Node(
+			2,
+			None,
+			Node(3)
+		)
+	),
+)
+
+assert str(get_anti_clockwise_boundary_of_binary_tree(tree)) == str([4, 1, 2, 3])
 
 tree = Node(
 	1,
@@ -52,7 +62,6 @@ tree = Node(
 )
 
 assert str(get_anti_clockwise_boundary_of_binary_tree(tree)) == str([1, 3, 4, 2])
-
 
 tree = Node(
 	1,

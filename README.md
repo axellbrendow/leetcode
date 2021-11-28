@@ -548,6 +548,8 @@ MEDIUM https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
 MEDIUM https://leetfree.com/problems/boundary-of-binary-tree
 <br>
+https://www.lintcode.com/problem/878/description
+<br>
 https://docs.google.com/document/d/1cD6VKwh6YPFZp3J2lq2ycLx3NxKT_xn7RPpMx5mlF0A/edit
 
 MEDIUM https://leetfree.com/problems/binary-tree-longest-consecutive-sequence
