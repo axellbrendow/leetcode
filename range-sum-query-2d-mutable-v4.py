@@ -1,56 +1,54 @@
-class FenwickTree:
-    def __init__(self, array) -> None:
-        self.array = array
-        self.update_index = -1
-        self.build_tree()
+class FenwickTree2D:
+    def __init__(self, nlines, ncolumns) -> None:
+        self._nlines = nlines
+        self._ncolumns = ncolumns
+        self._tree = [[0] * ncolumns for _ in range(nlines)]
 
-    def update(self, index, value, building=False):
-        old_val = self.array[index] if not building else 0
-        self.array[index] = value
-        index += 1
-        while index < len(self.tree):
-            self.tree[index] += -old_val + value
-            index += -index & index
+    def update(self, row, col, delta):
+        i, j = row, col
+        while i < self._nlines:
+            j = col
+            while j < self._ncolumns:
+                self._tree[i][j] += delta
+                j += j & -j
+            i += i & -i
 
-    def build_tree(self):
-        self.tree = [0] * (len(self.array) + 1)
-        for i in range(len(self.array)):
-            self.update(i, self.array[i], building=True)
-
-    def sum(self, i):
-        sum = 0
-        i += 1
+    def query(self, row, col):
+        total = 0
+        i, j = row, col
         while i > 0:
-            sum += self.tree[i]
-            i -= -i & i
-        return sum
-
-    def sum_range(self, left, right):
-        return self.sum(right) - (self.sum(left - 1) if left - 1 >= 0 else 0)
+            j = col
+            while j > 0:
+                total += self._tree[i][j]
+                j -= j & -j
+            i -= i & -i
+        return total
 
 class NumMatrix:
     def __init__(self, matrix):
         self.matrix = matrix
         self.nlines = len(matrix)
         self.ncolumns = len(matrix[0])
-        self.tree = FenwickTree([elem for row in matrix for elem in row])
+        self.tree = FenwickTree2D(self.nlines + 1, self.ncolumns + 1)
+        self.fill_tree()
 
-    def to_1d(self, i, j):
-        return i * self.ncolumns + j
-
-    def tree_sum(self, i, j):
-        return self.tree.sum(self.to_1d(i, j)) if i >= 0 and j >= 0 else 0
+    def fill_tree(self):
+        for i in range(self.nlines):
+            for j in range(self.ncolumns):
+                self.tree.update(i + 1, j + 1, self.matrix[i][j])
 
     def sumRegion(self, row1, col1, row2, col2):
         return (
-            self.tree_sum(row2, col2)
-            - self.tree_sum(row2, col1 - 1)
-            - self.tree_sum(row1 - 1, col2)
-            + self.tree_sum(row1 - 1, col1 - 1)
+            self.tree.query(row2 + 1, col2 + 1)
+            - self.tree.query(row2 + 1, col1)
+            - self.tree.query(row1, col2 + 1)
+            + self.tree.query(row1, col1)
         )
 
     def update(self, row, col, new_val):
-        self.tree.update(self.to_1d(row, col), new_val)
+        delta = new_val - self.matrix[row][col]
+        self.matrix[row][col] = new_val
+        self.tree.update(row + 1, col + 1, delta)
 
 matrix = NumMatrix([
     [3,0,1,4,2],
