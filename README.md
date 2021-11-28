@@ -346,6 +346,10 @@ MEDIUM https://leetcode.com/problems/range-sum-query-2d-immutable/
 <br>
 https://docs.google.com/document/d/1Bv3WA9DkvhtXQnBZkuBzusu9-gqe8_ZW5O_lLx_wblU/edit
 
+HARD https://leetcode.com/problems/range-sum-query-2d-mutable/
+<br>
+https://www.lintcode.com/problem/817/description
+
 ----------------------------
 
 Array & Hash Table
