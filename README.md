@@ -292,6 +292,8 @@ Array & Divide and Conquer & Sorting & Quickselect
 
 MEDIUM https://leetfree.com/problems/wiggle-sort.html
 <br>
+https://www.lintcode.com/problem/508/description
+<br>
 https://docs.google.com/document/d/1tSkoFmrRP9vuUT4rvenkgP3z7YKwC5_cxlwWLJdtUbg/edit
 
 ----------------------------
