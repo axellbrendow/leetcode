@@ -60,6 +60,8 @@ String & Bit Manipulation
 
 MEDIUM https://leetfree.com/problems/generalized-abbreviation
 <br>
+https://www.lintcode.com/problem/779/description
+<br>
 https://docs.google.com/document/d/1Frfc6LQDHGAS2kXcoKoahQpH857M6UEABCzaKY2dJs4/edit
 
 ----------------------------
