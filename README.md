@@ -212,6 +212,8 @@ https://docs.google.com/document/d/1on90YvY-EHzi0rR4Ff8YKF0Bcg56p23-SupMK1pL9nk/
 
 HARD https://leetfree.com/problems/shortest-distance-from-all-buildings
 <br>
+https://www.lintcode.com/problem/803/description
+<br>
 https://docs.google.com/document/d/1Wtb-3Vh-28fOQTjkK2UDoOMAnzyDal5gsW2YaKlt8jY/edit
 
 MEDIUM https://leetfree.com/problems/android-unlock-patterns
