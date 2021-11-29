@@ -9,6 +9,7 @@ def find_num_pairs(left, right, nums, target):
     return ans
 
 def find_num_triplets(nums, target):
+    nums.sort()
     ans = 0
     for i in range(len(nums) - 2):
         ans += find_num_pairs(i + 1, len(nums) - 1, nums, target - nums[i])
@@ -20,4 +21,8 @@ assert find_num_triplets(nums, target) == 2
 
 nums = [-2,0,-1,3]
 target = 2
+assert find_num_triplets(nums, target) == 3
+
+nums = [3,1,0,-2]
+target = 4
 assert find_num_triplets(nums, target) == 3
