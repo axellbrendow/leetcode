@@ -126,6 +126,8 @@ String & Hash Table & Array
 
 HARD https://leetfree.com/problems/group-shifted-strings
 <br>
+https://www.lintcode.com/problem/922/
+<br>
 https://docs.google.com/document/d/1OCI2FKwrZYR35j5nulXxm5Cskz29nSseYu16u9hhvp4/edit
 
 HARD https://leetfree.com/problems/word-abbreviation
