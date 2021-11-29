@@ -570,6 +570,8 @@ https://docs.google.com/document/d/1cD6VKwh6YPFZp3J2lq2ycLx3NxKT_xn7RPpMx5mlF0A/
 
 MEDIUM https://leetfree.com/problems/binary-tree-longest-consecutive-sequence
 <br>
+https://www.lintcode.com/problem/595/
+<br>
 https://docs.google.com/document/d/12FVRHPxu1ZkRZWx1rAYOo7VYXegUGDztf_c7WnlwMEY/edit
 
 MEDIUM https://leetfree.com/problems/binary-tree-longest-consecutive-sequence-ii
