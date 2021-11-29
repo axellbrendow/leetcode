@@ -1,3 +1,5 @@
+# Time Limit Exceeded
+
 def find_missing_ranges(integers, lower, upper):
 	MISSING_VALUE = 1
 	NO_MISSING_VALUE = -1

@@ -252,6 +252,8 @@ Array
 
 MEDIUM https://leetfree.com/problems/missing-ranges
 <br>
+https://www.lintcode.com/problem/641/
+<br>
 https://docs.google.com/document/d/1Ja_IOhCeOFFnQvXZYY6-gHclS3aSrQmm1YZPLlJa_kU/edit
 
 MEDIUM https://leetfree.com/problems/range-addition
