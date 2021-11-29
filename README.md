@@ -330,6 +330,8 @@ MEDIUM https://leetcode.com/problems/house-robber/
 
 EASY https://leetfree.com/problems/paint-fence
 <br>
+https://www.lintcode.com/problem/514/description
+<br>
 https://docs.google.com/document/d/1go8k2uEkaLhj443ZirLInnWY7r6MEu_-Ey2Sv84J67E/edit
 
 ----------------------------
