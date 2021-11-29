@@ -1,3 +1,5 @@
+# Wrong solution, tries to use only DFS on a topological sort problem
+
 def create_graph(words):
 	graph = {}
 	for word in words:
@@ -30,5 +32,18 @@ def find_order(words):
 			return nodes_str
 	return ''
 
-assert find_order(['a', 'bc', 'ce', 'db', 'da', 'bw', 'zc', 'wc', 'ed', 'wa']) == 'zcedbwa'
-assert find_order(['a', 'bc', 'ce', 'db', 'da', 'bw', 'zc', 'wc', 'wa']) == ''
+words = ['z','x']
+output = 'zx'
+assert find_order(words) == output
+
+words = ['zz','z']
+output = ''
+assert find_order(words) == output
+
+words = ['z','x', 'z']
+output = ''
+assert find_order(words) == output
+
+words = ["wrt","wrf","er","ett","rftt"]
+output = 'wertf'
+assert find_order(words) == output

@@ -642,6 +642,8 @@ MEDIUM https://leetcode.com/problems/course-schedule-ii/
 
 HARD https://leetfree.com/problems/alien-dictionary
 <br>
+https://www.lintcode.com/problem/892/
+<br>
 https://docs.google.com/document/d/1qszcdc5o4eMnMB8F26krRh7XmbRVvq6Uux-wouDboAU/edit
 
 MEDIUM https://leetfree.com/problems/sequence-reconstruction
