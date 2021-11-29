@@ -428,6 +428,8 @@ Array & Sorting & Sliding Window
 
 HARD https://leetfree.com/problems/3sum-smaller
 <br>
+https://www.lintcode.com/problem/918/description
+<br>
 https://docs.google.com/document/d/1Hw3qXho9D-MfAWw8ngK6Kgn8_dql7nLHZA7zyXTppe0/edit
 
 ----------------------------
