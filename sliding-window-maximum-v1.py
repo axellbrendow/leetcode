@@ -13,4 +13,6 @@ def maximum_value_of_each_subarray(array, k):
 			output.append(array[queue[0]])
 	return output
 
+assert str(maximum_value_of_each_subarray([10, 5, 2, 7, 8, 7], 1)) == str([10, 5, 2, 7, 8, 7])
+
 assert str(maximum_value_of_each_subarray([10, 5, 2, 7, 8, 7], 3)) == str([10, 7, 8, 8])
