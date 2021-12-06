@@ -64,6 +64,12 @@ https://www.lintcode.com/problem/779/description
 <br>
 https://docs.google.com/document/d/1Frfc6LQDHGAS2kXcoKoahQpH857M6UEABCzaKY2dJs4/edit
 
+HARD https://leetfree.com/problems/minimum-unique-word-abbreviation
+<br>
+https://www.lintcode.com/problem/890/description
+<br>
+https://docs.google.com/document/d/1wAkDYNuaP_KOa0e8o9Lqemox78auijMX6IQ2wr0iEEI/edit
+
 ----------------------------
 
 String & Stack
