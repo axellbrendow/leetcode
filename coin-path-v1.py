@@ -5,20 +5,15 @@ def get_min_cost_path(A, steps):
 	def dfs(pos, cost):
 		nonlocal min_cost
 		nonlocal best_path
-		if pos >= len(A): return
 		if pos == len(A) - 1:
-			path.append(pos + 1)
 			if cost < min_cost:
-				best_path = path.copy()
+				best_path = [*path, pos + 1]
 				min_cost = cost
-			path.pop()
 			return
 		path.append(pos + 1)
 		for i in range(1, steps + 1):
-			if pos + i > len(A): continue
-			if pos + i < len(A) and A[pos + i] == -1: continue
-			next_cost = cost + (A[pos + i] if pos + i < len(A) else 0)
-			dfs(pos + i, next_cost)
+			if pos + i >= len(A) or A[pos + i] == -1: continue
+			dfs(pos + i, cost + A[pos + i])
 		path.pop()
 	dfs(0, 0)
 	return best_path
