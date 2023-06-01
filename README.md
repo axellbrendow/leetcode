@@ -2,13 +2,13 @@
 
 LeetCode problems
 
-----------------------------
+---
 
 String & Tree & Depth-First Search & Breadth-First Search & Design & Binary Tree
 
 HARD https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 
-----------------------------
+---
 
 String & Design
 
@@ -20,7 +20,7 @@ EASY https://leetfree.com/problems/design-compressed-string-iterator
 <br>
 https://docs.google.com/document/d/1jwyDpqCi3ijegZEHsvwvSA2wWzLknlhm4Tukxu4C83o/edit
 
-----------------------------
+---
 
 String & Matching
 
@@ -30,7 +30,7 @@ https://www.lintcode.com/problem/637/description
 <br>
 https://docs.google.com/document/d/1WnDy1rZC37ftH6gZVdlBUDc5G-avLGezxxRQ4ZQfBGE/edit
 
-----------------------------
+---
 
 String & Matching & Join Ranges
 
@@ -38,7 +38,7 @@ MEDIUM https://leetfree.com/problems/add-bold-tag-in-string
 <br>
 https://docs.google.com/document/d/1BqlWdCYajS5cN1qHszuftx7ltCua9i98lRWt_k1d69A/edit
 
-----------------------------
+---
 
 String & Palindrome
 
@@ -46,7 +46,7 @@ EASY https://leetfree.com/problems/palindrome-permutation
 <br>
 https://docs.google.com/document/d/1F3WCxkR8V7a4W5whUwktMMQGnNAEJdrutdrGRW6y_aU/edit
 
-----------------------------
+---
 
 String & Two Pointers
 
@@ -54,7 +54,7 @@ MEDIUM https://leetfree.com/problems/output-contest-matches
 <br>
 https://docs.google.com/document/d/1bWcXT3AP2KddIPTd0gHTKEB3Jjjas1mZYRK195Oze98/edit
 
-----------------------------
+---
 
 String & Bit Manipulation
 
@@ -70,7 +70,7 @@ https://www.lintcode.com/problem/890/description
 <br>
 https://docs.google.com/document/d/1wAkDYNuaP_KOa0e8o9Lqemox78auijMX6IQ2wr0iEEI/edit
 
-----------------------------
+---
 
 String & Stack
 
@@ -82,7 +82,7 @@ MEDIUM https://leetcode.com/problems/longest-absolute-file-path/
 <br>
 https://docs.google.com/document/d/1Skfm7D-pZMUC4zf0PWePR3sS0Sa9hBDoiudfmo5ixxE/edit
 
-----------------------------
+---
 
 String & Hash Table & Backtracking
 
@@ -92,7 +92,7 @@ HARD https://leetfree.com/problems/word-squares
 <br>
 https://docs.google.com/document/d/1IRbXl8eBv4xhVT2z8Qv5kScfl5F7ef7IGJ1c0_GdOv0/edit
 
-----------------------------
+---
 
 String & Dynamic Programming & Recursion/Backtracking
 
@@ -110,7 +110,7 @@ https://www.lintcode.com/problem/857/description
 <br>
 https://docs.google.com/document/d/1Bg7At3-GnxwVI8P4H5dlkt7gF7kF0lHpjvwJu11lIJ0/edit
 
-----------------------------
+---
 
 String & Sliding Window & Hash Table
 
@@ -118,7 +118,9 @@ HARD https://leetfree.com/problems/longest-substring-with-at-most-k-distinct-cha
 <br>
 https://docs.google.com/document/d/19agzdcxcQMHX1QJ53RS5rsQFLAR_iJDgothnmcPVgvM/edit
 
-----------------------------
+MEDIUM https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+
+---
 
 String & Array
 
@@ -126,7 +128,7 @@ HARD https://leetcode.com/problems/text-justification/
 <br>
 https://docs.google.com/document/d/14fN3Iz0xIEodIUXE5hn0zORIv-cIt9u9Zn7zigZEcEo/edit
 
-----------------------------
+---
 
 String & Hash Table & Array
 
@@ -140,7 +142,7 @@ HARD https://leetfree.com/problems/word-abbreviation
 <br>
 https://docs.google.com/document/d/1vMykQsFgVX-7QMXRuU7Lc0xKp1If1xd168g9LSYUZog/edit
 
-----------------------------
+---
 
 String & Hash Table & Set
 
@@ -152,7 +154,7 @@ EASY https://leetfree.com/problems/sentence-similarity
 <br>
 https://docs.google.com/document/d/1iV9xPZ1EdRiCTHY4FGlT44Sw9bLOS08E8U4lyRWmaJo/edit
 
-----------------------------
+---
 
 String & Hash Table & Queue & Priority Queue & Heap
 
@@ -162,7 +164,7 @@ https://www.lintcode.com/problem/907/
 <br>
 https://docs.google.com/document/d/1D8PxggBxXur2F_j88idudqMeHGlgswZWU9jf4ESWwcQ/edit
 
-----------------------------
+---
 
 Matrix
 
@@ -184,7 +186,7 @@ https://www.lintcode.com/problem/888/description
 <br>
 https://docs.google.com/document/d/181nKMHO9HB6k6HBfg3ujYIG4-1xkJVZd7eTI0Tz2u8c/edit
 
-----------------------------
+---
 
 Matrix & Hash Table
 
@@ -198,7 +200,7 @@ https://www.lintcode.com/problem/881/description
 <br>
 https://docs.google.com/document/d/1BjdZ_Jgt0uNX_x6eSYL-M0Py4OIdlF78wUo6k4CtF_c/edit
 
-----------------------------
+---
 
 Matrix & Dynamic Programming
 
@@ -206,7 +208,7 @@ MEDIUM https://leetfree.com/problems/longest-line-of-consecutive-one-in-matrix
 <br>
 https://docs.google.com/document/d/1beHxEeKpQoh1KNxfFlKUJS6zmMcyknhYRGi77h6mTM4/edit
 
-----------------------------
+---
 
 Matrix & DFS & BFS
 
@@ -240,7 +242,7 @@ MEDIUM https://leetfree.com/problems/the-maze-ii
 <br>
 https://docs.google.com/document/d/1tBUfBSAhNu4yff6CKifzNVBRQ7DOBf2o6Crhru8CR08/edit
 
-----------------------------
+---
 
 Matrix & DFS & BFS & Union Find
 
@@ -250,7 +252,7 @@ HARD https://leetfree.com/problems/number-of-islands-ii
 <br>
 https://docs.google.com/document/d/1xMv1QhgVOdDNvbQ3S-nInmeSsPqqVGZREGDjaroExtw/edit
 
-----------------------------
+---
 
 Matrix & Array & Design
 
@@ -258,7 +260,7 @@ MEDIUM https://leetfree.com/problems/design-tic-tac-toe
 <br>
 https://docs.google.com/document/d/1s9olgGx6u8uWupYKhD1PiSOUAnDeDnqJgUhhJq1Oa7g/edit
 
-----------------------------
+---
 
 Array
 
@@ -278,7 +280,7 @@ https://www.lintcode.com/problem/884/description
 <br>
 https://docs.google.com/document/d/1bqXz3IeRzOKjcBVQ-pxFR-qVxfoT2pw3Tq63Qwvuj3U/edit
 
-----------------------------
+---
 
 Array & Math
 
@@ -286,7 +288,7 @@ MEDIUM https://leetfree.com/problems/sort-transformed-array
 <br>
 https://docs.google.com/document/d/1dt27fssDRLLJVXbNYUGYcjWFaihMaXSi1knJZycwO3c/edit
 
-----------------------------
+---
 
 Array & Math & Set
 
@@ -296,13 +298,13 @@ https://www.lintcode.com/problem/line-reflection/description
 <br>
 https://docs.google.com/document/d/1hacMUc89PQd1zgLrD32PWHUdO8ox7wXk1ciR21sqaP8/edit
 
-----------------------------
+---
 
 Array & Binary Search & Divide and Conquer
 
 HARD https://leetcode.com/problems/median-of-two-sorted-arrays/
 
-----------------------------
+---
 
 Array & Divide and Conquer & Sorting & Quickselect
 
@@ -318,7 +320,7 @@ https://www.lintcode.com/problem/507/description
 <br>
 https://docs.google.com/document/d/1a9OjNCOnCiuzHC6hxJq8XRzpcUMwqK-puvA8BjuoPv0/edit
 
-----------------------------
+---
 
 Array & Dynamic Programming
 
@@ -346,7 +348,7 @@ https://www.lintcode.com/problem/514/description
 <br>
 https://docs.google.com/document/d/1go8k2uEkaLhj443ZirLInnWY7r6MEu_-Ey2Sv84J67E/edit
 
-----------------------------
+---
 
 Array & Dynamic Programming & Queue & Monotonic Queue
 
@@ -356,7 +358,7 @@ https://www.lintcode.com/problem/866/description
 <br>
 https://docs.google.com/document/d/1Qs_RaR8uvE8KQ-l4FSIgfqx02LjIRD2E24tM2GSjxmc/edit
 
-----------------------------
+---
 
 Array & Sorting & Heap & Greedy
 
@@ -364,7 +366,7 @@ MEDIUM https://leetfree.com/problems/meeting-rooms-ii.html
 <br>
 https://docs.google.com/document/d/1ZKfmgo2ghLN2Ux3ckRsHvpkNeNzzWNI-KX8KABygbFE/edit
 
-----------------------------
+---
 
 Array & Prefix Sum
 
@@ -378,7 +380,7 @@ HARD https://leetcode.com/problems/range-sum-query-2d-mutable/
 <br>
 https://www.lintcode.com/problem/817/description
 
-----------------------------
+---
 
 Array & Hash Table
 
@@ -386,7 +388,7 @@ EASY https://leetcode.com/problems/two-sum/
 
 HARD https://leetcode.com/problems/first-missing-positive/
 
-----------------------------
+---
 
 Array & Hash Table & Monotonic Stack
 
@@ -394,7 +396,7 @@ EASY https://leetcode.com/problems/next-greater-element-i/
 <br>
 https://docs.google.com/document/d/1f9nHwYBce2_uYJEbnNdGTJkaI7a1uO66_jiR6puizkI/edit
 
-----------------------------
+---
 
 Array & Stack & Monotonic Stack
 
@@ -402,7 +404,7 @@ HARD https://leetcode.com/problems/largest-rectangle-in-histogram/
 <br>
 https://docs.google.com/document/d/1fN5rTiQdkLGQ_jpPZHXB5GYStZPFKUF0cq3VKWxxntI/edit
 
-----------------------------
+---
 
 Array & Stack & Monotonic Stack & Dynamic Programming & Two Pointers
 
@@ -410,13 +412,13 @@ HARD https://leetcode.com/problems/trapping-rain-water/
 <br>
 https://docs.google.com/document/d/1_iPhFiVBxqlxA_I2QCdPJ4H82hogtxK7_GaO0EwPDYE/edit
 
-----------------------------
+---
 
 Array & Bit Manipulation
 
 EASY https://leetcode.com/problems/single-number/
 
-----------------------------
+---
 
 Array & Sliding Window
 
@@ -430,7 +432,7 @@ https://www.lintcode.com/problem/max-consecutive-ones-ii/description
 <br>
 https://docs.google.com/document/d/1Nn5ax6wKPqaJfpCI5KgFEOpGiTR4JJthWq__ESGqONA/edit
 
-----------------------------
+---
 
 Array & Sorting & Sliding Window
 
@@ -440,7 +442,7 @@ https://www.lintcode.com/problem/918/description
 <br>
 https://docs.google.com/document/d/1Hw3qXho9D-MfAWw8ngK6Kgn8_dql7nLHZA7zyXTppe0/edit
 
-----------------------------
+---
 
 Array & Sliding Window & Queue & Monotonic Queue & Heap & Prefix Sum
 
@@ -456,7 +458,7 @@ HARD https://leetfree.com/problems/maximum-average-subarray-ii
 <br>
 https://docs.google.com/document/d/1hgpp4Eid5HkxX7hqZ-0ZD6Zh2_ZpeHRntN2zzJUpi3I/edit
 
-----------------------------
+---
 
 Array & Iterator & Design
 
@@ -468,7 +470,7 @@ MEDIUM https://leetfree.com/problems/flatten-2d-vector
 <br>
 https://docs.google.com/document/d/1aTroVSknrJ1kwtqs2foNMEK4-rEpPnxhbzW_w6VpGOw/edit
 
-----------------------------
+---
 
 Array & Two Pointers & Stack & Greedy & Sorting & Monotonic Stack
 
@@ -476,7 +478,7 @@ MEDIUM https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 <br>
 https://docs.google.com/document/d/1MGsfvf91b6JvpmDZ7x2B29TVskJwUa-KmWoK-kD7ESM/edit
 
-----------------------------
+---
 
 Array & Design & Hash Table
 
@@ -484,7 +486,7 @@ MEDIUM https://leetfree.com/problems/design-hit-counter
 <br>
 https://docs.google.com/document/d/1MGsfvf91b6JvpmDZ7x2B29TVskJwUa-KmWoK-kD7ESM/edit
 
-----------------------------
+---
 
 Array & Design & Pointer & Buffer
 
@@ -492,7 +494,7 @@ HARD https://leetfree.com/problems/read-n-characters-given-read4-ii-call-multipl
 <br>
 https://docs.google.com/document/d/1lReL7WO6NQxOJShWuT6YswQWTwGDhhbbanzNICazj1M/edit
 
-----------------------------
+---
 
 Hash Table & Design
 
@@ -500,7 +502,7 @@ EASY https://leetfree.com/problems/logger-rate-limiter
 <br>
 https://docs.google.com/document/d/1aejnbmxBG1oHv97JTHeXhJTBxghltwvgXYqk4khIATY/edit
 
-----------------------------
+---
 
 Queue & Set & Design
 
@@ -508,7 +510,7 @@ MEDIUM https://leetfree.com/problems/design-snake-game
 <br>
 https://docs.google.com/document/d/1lpPeoaG1igWP3e7Py6uTtRyPk2WmM-Z_BEFzP9nrRnQ/edit
 
-----------------------------
+---
 
 Queue & Stream & Greedy
 
@@ -516,7 +518,7 @@ EASY https://leetfree.com/problems/moving-average-from-data-stream
 <br>
 https://docs.google.com/document/d/1aISXsuz5hw63kQtA15ToLc94UH0JLZYSViz2nuuxMUw/edit
 
-----------------------------
+---
 
 Dynamic Programming
 
@@ -528,7 +530,7 @@ https://www.lintcode.com/problem/867/description
 <br>
 https://docs.google.com/document/d/1wBJXFYNneUSnk2Lkk5mKKXcntORRx_YJpcTY5fNIu1U/edit
 
-----------------------------
+---
 
 Heap & Set
 
@@ -536,13 +538,13 @@ MEDIUM https://leetfree.com/problems/design-phone-directory
 <br>
 https://docs.google.com/document/d/17QdFcANghw2OGdcIynyF-yT5ug_wn76chhIK4EwITho/edit
 
-----------------------------
+---
 
 LinkedList & Divide and Conquer & Heap (Priority Queue) & Merge Sort
 
 HARD https://leetcode.com/problems/merge-k-sorted-lists/
 
-----------------------------
+---
 
 LinkedList
 
@@ -560,7 +562,7 @@ MEDIUM https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 <br>
 https://docs.google.com/document/d/168pYWvRzxLsY_RCbFkDiM-DBP7caEvw2qKMIgXwNwM0/edit
 
-----------------------------
+---
 
 Tree & DFS & BFS
 
@@ -600,7 +602,7 @@ https://leetfree.com/problems/binary-tree-vertical-order-traversal
 <br>
 https://docs.google.com/document/d/1AuKyH8VGjEA_pMDQRPWjQ9hQc5qD6in5_VW6RSyVeRs/edit
 
-----------------------------
+---
 
 Binary Search Tree
 
@@ -614,13 +616,13 @@ https://www.lintcode.com/problem/901/description
 <br>
 https://docs.google.com/document/d/1UnwGthB03KcQR6fdq_buT5ot6mPw55MVueNP4_HSKLw/edit
 
-----------------------------
+---
 
 Trie & Hash Table & String & Design
 
 MEDIUM https://leetcode.com/problems/implement-trie-prefix-tree/
 
-----------------------------
+---
 
 Graph & DFS
 
@@ -644,7 +646,7 @@ HARD https://leetcode.com/problems/reconstruct-itinerary/
 <br>
 https://docs.google.com/document/d/1LxFSfPXpHg6mQQlb1vn9B7tmpw3bQlvaP1kNDz9nwkk/edit
 
-----------------------------
+---
 
 Graph & Adjacency Matrix & Heap
 
@@ -652,7 +654,7 @@ HARD https://leetfree.com/problems/optimal-account-balancing
 <br>
 https://docs.google.com/document/d/1iHGo0aUm58Tnj3ZPliU0iZp0SispAR3q7IHPQawIW08/edit
 
-----------------------------
+---
 
 Graph & DFS & BFS & Topological Sort
 
@@ -676,7 +678,7 @@ https://www.lintcode.com/problem/605/description
 <br>
 https://docs.google.com/document/d/1IFKcopuk7AOY8M0B7ZdMCPHRHLLHi6rhzvGrqpyp85Q/edit
 
-----------------------------
+---
 
 SQL
 
