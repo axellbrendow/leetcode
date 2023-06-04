@@ -84,6 +84,12 @@ https://docs.google.com/document/d/1Skfm7D-pZMUC4zf0PWePR3sS0Sa9hBDoiudfmo5ixxE/
 
 ---
 
+String & Hash Table & Math
+
+EASY https://leetcode.com/problems/roman-to-integer
+
+---
+
 String & Hash Table & Backtracking
 
 MEDIUM https://leetcode.com/problems/letter-combinations-of-a-phone-number/
