@@ -11,6 +11,9 @@ class Command(ABC):
     def name(self):
         return 'Command'
 
+    def execute_command(self, command):
+        command.execute()
+
 
 class CommandMock(Command):
     def execute(self):
@@ -44,6 +47,17 @@ class MyTestCase(unittest.TestCase):
         command = Command()
         str = command.name()
         self.assertEqual(str, 'Mocked Command')
+
+    @mock.patch.multiple(Command, __abstractmethods__=set())
+    def test_command_class_execute_command_method_by_mocking_the_command_argument(self):
+        command_mock = mock.Mock()
+        command_mock.execute = mock.Mock(
+            side_effect=lambda: print('Mocked execute'))
+
+        command = Command()
+        command.execute_command(command_mock)
+
+        command_mock.execute.assert_called_once()
 
 
 if __name__ == '__main__':
