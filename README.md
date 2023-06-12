@@ -102,6 +102,8 @@ https://docs.google.com/document/d/1IRbXl8eBv4xhVT2z8Qv5kScfl5F7ef7IGJ1c0_GdOv0/
 
 String & Dynamic Programming & Recursion/Backtracking
 
+MEDIUM https://leetcode.com/problems/longest-palindromic-substring/
+
 HARD https://leetcode.com/problems/regular-expression-matching/
 
 MEDIUM https://leetcode.com/problems/generate-parentheses/
@@ -353,6 +355,8 @@ EASY https://leetfree.com/problems/paint-fence
 https://www.lintcode.com/problem/514/description
 <br>
 https://docs.google.com/document/d/1go8k2uEkaLhj443ZirLInnWY7r6MEu_-Ey2Sv84J67E/edit
+
+MEDIUM https://leetcode.com/problems/partition-equal-subset-sum/
 
 ---
 
