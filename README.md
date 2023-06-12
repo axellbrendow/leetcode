@@ -122,7 +122,7 @@ https://docs.google.com/document/d/1Bg7At3-GnxwVI8P4H5dlkt7gF7kF0lHpjvwJu11lIJ0/
 
 String & Sliding Window & Hash Table
 
-HARD https://leetfree.com/problems/longest-substring-with-at-most-k-distinct-characters
+HARD - Longest Substring with At Most K Distinct Characters - https://www.lintcode.com/problem/386/
 <br>
 https://docs.google.com/document/d/19agzdcxcQMHX1QJ53RS5rsQFLAR_iJDgothnmcPVgvM/edit
 
