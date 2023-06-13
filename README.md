@@ -84,6 +84,8 @@ https://docs.google.com/document/d/1Skfm7D-pZMUC4zf0PWePR3sS0Sa9hBDoiudfmo5ixxE/
 
 MEDIUM https://leetcode.com/problems/basic-calculator-ii
 
+HARD https://leetcode.com/problems/basic-calculator
+
 ---
 
 String & Hash Table & Math
