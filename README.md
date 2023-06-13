@@ -452,6 +452,8 @@ https://www.lintcode.com/problem/max-consecutive-ones-ii/description
 <br>
 https://docs.google.com/document/d/1Nn5ax6wKPqaJfpCI5KgFEOpGiTR4JJthWq__ESGqONA/edit
 
+MEDIUM https://leetcode.com/problems/fruit-into-baskets
+
 ---
 
 Array & Sorting & Sliding Window
