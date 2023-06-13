@@ -5,11 +5,13 @@ The calculator input is assumed to be valid.
 precedence from highest to lowest:
 
 digits
-parentheses
 unary
 multiply | divide
 add | subtract
 """
+
+
+import math
 
 
 def calc_digits(index, string):
@@ -23,17 +25,6 @@ def calc_digits(index, string):
         return None, index
 
 
-def calc_parentheses(index, string):
-    value, index = calc_digits(index, string)
-    if value:
-        return value, index
-
-    assert string[index] == '('
-    value, index = calc_expression(index + 1, string)
-    assert string[index] == ')'
-    return value, index + 1
-
-
 def calc_unary(index, string):
     if string[index] == '-':
         value, index = calc_unary(index + 1, string)
@@ -43,7 +34,7 @@ def calc_unary(index, string):
         value, index = calc_unary(index + 1, string)
         return value, index
 
-    return calc_parentheses(index, string)
+    return calc_digits(index, string)
 
 
 def calc_multiply(index, string):
@@ -52,7 +43,17 @@ def calc_multiply(index, string):
     while index < len(string) and (string[index] == '*' or string[index] == '/'):
         operation = string[index]
         second_value, index = calc_unary(index + 1, string)
-        value = value * second_value if operation == '*' else value / second_value
+
+        if operation == '*':
+            value = value * second_value
+        else:
+            if (
+                value < 0 and second_value >= 0
+                or value >= 0 and second_value < 0
+            ):
+                value = math.ceil(value / second_value)
+            else:
+                value = value // second_value
 
     return value, index
 
@@ -85,5 +86,3 @@ assert calc(" 3+5 / 2 ") == 5
 assert calc("3 + 2 * 2") == 7
 assert calc("1 * 2 + 3") == 5
 assert calc("1 + 2 * 3") == 7
-assert calc("(1 + 2) * 3") == 9
-assert calc("-(1 + 2) * 3") == -9
