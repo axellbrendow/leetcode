@@ -270,6 +270,12 @@ https://docs.google.com/document/d/1s9olgGx6u8uWupYKhD1PiSOUAnDeDnqJgUhhJq1Oa7g/
 
 ---
 
+Math
+
+MEDIUM https://leetcode.com/problems/reverse-integer/
+
+---
+
 Array
 
 MEDIUM https://leetfree.com/problems/missing-ranges

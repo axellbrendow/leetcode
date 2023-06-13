@@ -57,4 +57,5 @@ assert reverse(-1) == -1
 assert reverse(-12) == -21
 assert reverse(1_000_000_002) == 2_000_000_001
 assert reverse(1_000_000_102) == 2_010_000_001
+assert reverse(1_463_847_412) == 2_147_483_641
 assert reverse(-2_147_483_412) == -2_143_847_412
