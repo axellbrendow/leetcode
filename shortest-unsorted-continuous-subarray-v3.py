@@ -36,9 +36,11 @@ def findUnsortedSubarray(nums):
 
 
 assert findUnsortedSubarray([1, 2, 9, 8, 7, 7, 11, 12, 4, 5, 6]) == 9
+assert findUnsortedSubarray([1, 2, 9, 8, 7, 7, 11, 12, 4, 5, 6, 0]) == 12
 assert findUnsortedSubarray([1, 2, 3]) == 0
 assert findUnsortedSubarray([1, 2, 3, 3, 3]) == 0
 assert findUnsortedSubarray([2, 1, 3, 3]) == 2
 assert findUnsortedSubarray([3, 3, 1, 4]) == 3
 assert findUnsortedSubarray([1, 3, 2]) == 2
 assert findUnsortedSubarray([3, 2, 1]) == 3
+assert findUnsortedSubarray([2, 3, 3, 2, 4]) == 3
