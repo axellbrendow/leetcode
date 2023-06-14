@@ -584,6 +584,8 @@ MEDIUM https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 <br>
 https://docs.google.com/document/d/168pYWvRzxLsY_RCbFkDiM-DBP7caEvw2qKMIgXwNwM0/edit
 
+EASY https://leetcode.com/problems/middle-of-the-linked-list
+
 ---
 
 Tree & DFS & BFS

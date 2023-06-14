@@ -5,7 +5,7 @@ from typing import Optional
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
-        self.next = next
+        self.next: ListNode = next
 
     def __eq__(self, __value: object) -> bool:
         if not isinstance(__value, ListNode):
