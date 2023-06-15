@@ -612,6 +612,8 @@ EASY https://leetcode.com/problems/merge-two-binary-trees/
 
 EASY https://leetcode.com/problems/invert-binary-tree/
 
+MEDIUM https://leetcode.com/problems/binary-tree-level-order-traversal/
+
 MEDIUM https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
 
 MEDIUM https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
