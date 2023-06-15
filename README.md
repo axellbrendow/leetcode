@@ -322,6 +322,8 @@ Array & Binary Search & Divide and Conquer
 
 HARD https://leetcode.com/problems/median-of-two-sorted-arrays/
 
+EASY https://leetcode.com/problems/kth-missing-positive-number/
+
 ---
 
 Array & Divide and Conquer & Sorting & Quickselect
