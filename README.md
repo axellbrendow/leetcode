@@ -604,6 +604,8 @@ EASY https://leetcode.com/problems/middle-of-the-linked-list
 
 Tree & DFS & BFS
 
+EASY https://leetcode.com/problems/minimum-depth-of-binary-tree/
+
 EASY https://leetcode.com/problems/same-tree/
 
 EASY https://leetcode.com/problems/diameter-of-binary-tree/
