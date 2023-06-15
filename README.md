@@ -382,7 +382,9 @@ https://docs.google.com/document/d/1Qs_RaR8uvE8KQ-l4FSIgfqx02LjIRD2E24tM2GSjxmc/
 
 Array & Sorting & Heap & Greedy
 
-MEDIUM https://leetfree.com/problems/meeting-rooms-ii.html
+EASY - Meeting Rooms - https://www.lintcode.com/problem/920/
+
+MEDIUM - Meeting Rooms II - https://www.lintcode.com/problem/919/
 <br>
 https://docs.google.com/document/d/1ZKfmgo2ghLN2Ux3ckRsHvpkNeNzzWNI-KX8KABygbFE/edit
 
