@@ -586,6 +586,8 @@ https://docs.google.com/document/d/1lbyKMqF89wIwFdRCe9aUgTeq69dmZ-K1F5VGFw39yGU/
 
 HARD https://leetcode.com/problems/reverse-nodes-in-k-group/
 
+MEDIUM https://leetcode.com/problems/rotate-list/description/
+
 MEDIUM https://leetcode.com/problems/add-two-numbers/
 
 EASY https://leetcode.com/problems/intersection-of-two-linked-lists/
