@@ -414,6 +414,8 @@ HARD https://leetcode.com/problems/first-missing-positive/
 
 EASY https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 
+MEDIUM https://leetcode.com/problems/find-all-duplicates-in-an-array/
+
 ---
 
 Array & Hash Table & Monotonic Stack
