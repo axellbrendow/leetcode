@@ -24,7 +24,7 @@ j : sum that I wanna know if it is possible to achieve from this index
 
 What's interesting about this approach is that the number of possible subset sums in the array is limited.
 sum(array) is the maximum value because it considers all elements and all the other possible sums are under
-this value. In most cases, 2^n will be much bigger than n * sum(array), so that's way DP is better given
+this value. In most cases, 2^n will be much bigger than n * sum(array), so that's why DP is better given
 the problem constraints.
 
 Another important point to observe is that, as the number of possible sums is probably smaller than 2^n,
