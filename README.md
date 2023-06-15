@@ -412,6 +412,8 @@ EASY https://leetcode.com/problems/two-sum/
 
 HARD https://leetcode.com/problems/first-missing-positive/
 
+EASY https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
 ---
 
 Array & Hash Table & Monotonic Stack
