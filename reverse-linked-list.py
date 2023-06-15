@@ -2,6 +2,34 @@
 from typing import Optional
 
 
+"""
+Overall idea:
+
+f : first_node
+l : last_node
+
+f
+l
+a -> b -> c -> d -> e
+
+f
+     l
+b -> a -> c -> d -> e
+
+f
+          l
+c -> b -> a -> d -> e
+
+f
+               l
+d -> c -> b -> a -> e
+
+f
+                    l
+e -> d -> c -> b -> a
+"""
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
