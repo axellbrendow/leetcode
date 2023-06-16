@@ -108,6 +108,8 @@ String & Dynamic Programming & Recursion/Backtracking
 
 MEDIUM https://leetcode.com/problems/longest-palindromic-substring/
 
+HARD https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
+
 HARD https://leetcode.com/problems/regular-expression-matching/
 
 MEDIUM https://leetcode.com/problems/generate-parentheses/
