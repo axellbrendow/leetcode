@@ -219,7 +219,6 @@ class AutocompleteSystem:
             _, _, node = heapq.heappop(heap)
             if node.represents_a_sentence:
                 output.append(node.prefix)
-                continue
             for child in node:
                 heapq.heappush(
                     heap,
