@@ -666,6 +666,10 @@ Trie & Hash Table & String & Design
 
 MEDIUM https://leetcode.com/problems/implement-trie-prefix-tree/
 
+HARD https://leetcode.com/problems/design-search-autocomplete-system/
+<br>
+https://leetcode.ca/all/642.html
+
 ---
 
 Graph & DFS
