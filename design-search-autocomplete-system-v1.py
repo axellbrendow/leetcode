@@ -250,6 +250,12 @@ assert system.input('i') == ["i love you", "island", "i love leetcode"]
 assert system.input(' ') == ["i love you", "i love leetcode"]
 assert system.input('a') == []
 assert system.input('#') == []
-
 # It's not clear from the question text what I should do in this case
 assert system.input('b') == []
+
+sentences = ['aa', 'ab', 'ac']
+times = [1, 1, 1]
+system = AutocompleteSystem(sentences, times)
+# Uncomment this line to print the tree
+# print(system._trie._root.to_json())
+assert system.input('a') == ['aa', 'ab', 'ac']
