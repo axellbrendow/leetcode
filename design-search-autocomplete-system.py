@@ -90,8 +90,13 @@ Some notes about mistakes I made in initial versions of this code:
 the top 3 strings it's not a normal DFS, its actually a BFS (Dijkstra-like) where you
 can't mount the prefix while traversing the tree. (It's possible to mount the prefix in
 the BFS too, but you need to store the prefix in the heap and get it back when heappop).
-(Another way of speeding up this is to actually store all the strings that pass through
-a node in the node itself, that way you just need to reach the node and sort the strings).
+(Another way of speeding up this is to actually store all the strings (or just top k)
+that pass through a node in the node itself, that way you just need to reach the node
+and sort the strings).
+
+- Another way of optimizing is that users usually don't type long queries so we can
+limit the depth of the tree to 50 characters for example. If we do this, all searches
+become O(1).
 
 - When I first designed Trie, I used an extra '$' node to indicate a string has ended,
 but this doesn't make sense for this question as we have a TrieNode class which can have
