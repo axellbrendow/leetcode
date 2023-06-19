@@ -342,6 +342,8 @@ https://www.lintcode.com/problem/507/description
 <br>
 https://docs.google.com/document/d/1a9OjNCOnCiuzHC6hxJq8XRzpcUMwqK-puvA8BjuoPv0/edit
 
+MEDIUM https://leetcode.com/problems/top-k-frequent-elements/
+
 ---
 
 Array & Dynamic Programming
