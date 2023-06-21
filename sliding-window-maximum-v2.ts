@@ -1,30 +1,10 @@
 type Comparator<T> = (val1: T, val2: T) => number;
 
 interface HeapConstructorArgs<T> {
-  /**
-   * Values to be inserted in the heap initially.
-   */
   values?: T[];
-
-  /**
-   * Return 0 if `val1 == val2`.
-   *
-   * Return positive number if `val1 > val2`.
-   *
-   * Return negative number if `val1 < val2`.
-   *
-   * If you want elements in ascending order, you can use `(a, b) => a - b`
-   *
-   * If you want elements in descending order, you can use `(a, b) => b - a`
-   *
-   * For strings you can use `(a, b) => a.localeCompare(b)`.
-   *
-   * Default value: `(a, b) => a - b`
-   */
   comparator?: Comparator<T>;
 }
 
-/** Min-heap by default */
 class Heap<T> {
   private _values: T[];
   private _comparator: Comparator<T>;
@@ -32,17 +12,7 @@ class Heap<T> {
   constructor(args?: HeapConstructorArgs<T>) {
     this._values = [];
     this._comparator = args?.comparator || ((a: any, b: any) => a - b);
-    this.validate();
     if (args?.values) this.pushAll(args.values);
-  }
-
-  private validate() {
-    if (this._values && !Array.isArray(this._values)) {
-      throw new Error("Heap this.data should be an array");
-    }
-    if (typeof this._comparator !== "function") {
-      throw new Error("Heap this.comparator should be a function");
-    }
   }
 
   private left = (i: number) => (i << 1) + 1;
@@ -115,31 +85,50 @@ class Heap<T> {
     this.bubbleDown();
     return value;
   }
+}
 
-  public *toStringRotated90DegreesCounterClockwise() {
-    const self = this;
-    function* dfs(i: number, depth: number): Generator<string> {
-      if (i >= self._values.length) return;
-      yield* dfs(self.right(i), depth + 1);
-      yield "\t".repeat(depth) + self._values[i];
-      yield* dfs(self.left(i), depth + 1);
-    }
-    yield* dfs(0, 0);
+interface ValueAndIndex {
+  value: number;
+  index: number;
+}
+
+const maximumValueOfEachSubarray = (array: number[], k: number) => {
+  if (k <= 0) return [];
+
+  const output: number[] = [];
+  const heap = new Heap<ValueAndIndex>({
+    comparator: (a, b) => b.value - a.value,
+  });
+
+  for (let i = 0; i < k - 1; i++) {
+    heap.push({ value: array[i], index: i });
   }
 
-  public print = () =>
-    [...this.toStringRotated90DegreesCounterClockwise()].forEach((line) =>
-      console.log(line)
-    );
-}
+  for (let i = k - 1; i < array.length; i++) {
+    heap.push({ value: array[i], index: i });
+    // @ts-ignore
+    while (heap.peek()?.index <= i - k) {
+      heap.pop();
+    }
+    // @ts-ignore
+    output.push(heap.peek()?.value);
+  }
 
-const heap = new Heap({
-  values: [3, 2, 1, 4, -1, -5],
-  comparator: (a, b) => a - b,
-});
+  return output;
+};
 
-heap.print();
+let testNumber = 0;
 
-while (!heap.isEmpty()) {
-  console.log(heap.pop());
-}
+let nums = [10, 5, 2, 7, 8, 7];
+let k = 1;
+let expectedOutput = [10, 5, 2, 7, 8, 7];
+let output = maximumValueOfEachSubarray(nums, k);
+let testPassed = JSON.stringify(output) == JSON.stringify(expectedOutput);
+console.log("Test " + ++testNumber + (testPassed ? " succeeded" : " failed"));
+
+nums = [10, 5, 2, 7, 8, 7];
+k = 3;
+expectedOutput = [10, 7, 8, 8];
+output = maximumValueOfEachSubarray(nums, k);
+testPassed = JSON.stringify(output) == JSON.stringify(expectedOutput);
+console.log("Test " + ++testNumber + (testPassed ? " succeeded" : " failed"));

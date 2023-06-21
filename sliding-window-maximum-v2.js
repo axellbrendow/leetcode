@@ -1,4 +1,3 @@
-/** Min-heap by default */
 class Heap {
   constructor(args) {
     this._values = [];
@@ -78,11 +77,39 @@ class Heap {
   }
 }
 
-const heap = new Heap({
-  values: [3, 2, 1, 4, -1, -5],
-  comparator: (a, b) => a - b,
-});
+const maximumValueOfEachSubarray = (array, k) => {
+  if (k <= 0) return [];
 
-while (!heap.isEmpty()) {
-  console.log(heap.pop());
-}
+  const output = [];
+  const heap = new Heap({ comparator: (a, b) => b.value - a.value });
+
+  for (let i = 0; i < k - 1; i++) {
+    heap.push({ value: array[i], index: i });
+  }
+
+  for (let i = k - 1; i < array.length; i++) {
+    heap.push({ value: array[i], index: i });
+    while (heap.peek().index <= i - k) {
+      heap.pop();
+    }
+    output.push(heap.peek().value);
+  }
+
+  return output;
+};
+
+let testNumber = 0;
+
+let nums = [10, 5, 2, 7, 8, 7];
+let k = 1;
+let expectedOutput = [10, 5, 2, 7, 8, 7];
+let output = maximumValueOfEachSubarray(nums, k);
+let testPassed = JSON.stringify(output) == JSON.stringify(expectedOutput);
+console.log("Test " + ++testNumber + (testPassed ? " succeeded" : " failed"));
+
+nums = [10, 5, 2, 7, 8, 7];
+k = 3;
+expectedOutput = [10, 7, 8, 8];
+output = maximumValueOfEachSubarray(nums, k);
+testPassed = JSON.stringify(output) == JSON.stringify(expectedOutput);
+console.log("Test " + ++testNumber + (testPassed ? " succeeded" : " failed"));
