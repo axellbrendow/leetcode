@@ -1,24 +1,21 @@
 import java.util.Arrays;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.HashMap;
+import java.util.Map;
 
-class TwoSumV2 {
+class TwoSumV4 {
     public int[] twoSum(int[] nums, int target) {
-        final var numToIndices = IntStream.range(0, nums.length).boxed()
-                .collect(Collectors.groupingBy(index -> nums[index]));
-
-        return Arrays.stream(nums)
-                .filter(num -> num + num == target ? numToIndices.get(num).size() > 1
-                        : numToIndices.containsKey(target - num))
-                .mapToObj(num -> new int[] {
-                        numToIndices.get(num).get(0),
-                        numToIndices.get(target - num).get(num + num == target ? 1 : 0)
-                })
-                .findFirst().get();
+        final Map<Integer, Integer> numToIndex = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (numToIndex.containsKey(target - nums[i])) {
+                return new int[] { numToIndex.get(target - nums[i]), i };
+            }
+            numToIndex.put(nums[i], i);
+        }
+        return null;
     }
 
     public static void main(String[] args) {
-        TwoSumV2 twoSum = new TwoSumV2();
+        TwoSumV4 twoSum = new TwoSumV4();
 
         var testNumber = 0;
 
