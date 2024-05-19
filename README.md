@@ -4,6 +4,84 @@ LeetCode problems
 
 I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository with more questions.
 
+Some coding question topics:
+- Two Pointers
+- Fast & Slow Pointers
+- Cyclic Sort (consists of using the value as its own index to sort the array)
+  - Find all Missing Numbers
+  - Find all Duplicate Numbers
+  - Find the Smallest Missing Positive Number
+  - Find the First K Missing Positive Numbers
+- Sliding Window
+- Merge Intervals
+- In-place Reversal of a LinkedList
+- Doubly-Linked List
+- Stacks
+- Monotonic Stack
+- Monotonic Queue
+- Hash Maps
+- Tree Breadth-First Search
+- Tree Depth First Search
+- Graphs
+- Islands (Matrix Traversal)
+- Two Heaps
+- Design
+- Subsets (permutations or combinations)
+  - String Permutations by Changing Case
+  - Unique Generalized Abbreviations
+- Modified Binary Search
+  - Ceiling of a number
+  - Bitonic Array Maximum
+- Merge Sort
+- Bit Manipulation
+  - Two Single Numbers
+  - Flip and Invert an Image
+- Bitmask
+- Top 'K' Elements
+- K-way Merge
+- Greedy Algorithms
+- 0/1 Knapsack (Dynamic Programming)
+  - Equal Subset Sum Partition
+  - Minimum Subset Sum Difference
+  - Rod Cutting
+  - Coin Change
+- Backtracking
+- Fibonacci Numbers
+  - Staircase
+  - House Thief
+- Trie
+- Topological Sort
+- Palindromic Subsequence
+  - Longest Palindromic Subsequence
+  - Minimum Deletions in a String to make it a Palindrome
+- Longest Common Substring
+  - Maximum Sum Increasing Subsequence
+  - Edit Distance
+- Suffix Array
+- Union Find
+- Ordered Set
+  - Longest Continuous Subarray
+  - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+- Prefix Sum
+  - Find the Middle Index in Array
+  - Maximum Size Subarray Sum Equals K
+  - Subarray Sum Equals K
+- Rolling Hash
+- Data Stream
+- Game Theory
+- Number Theory
+- Geometry
+- Segment Tree
+- Binary Indexed Tree
+- Concurrency
+- Probability and Statistics
+- Quickselect
+- Bucket Sort
+- Minimum Spanning Tree (Kruskal Algorithm)
+- Strongly Connected Component
+- Eulerian Circuit
+- Radix Sort
+
 ---
 
 String & Tree & Depth-First Search & Breadth-First Search & Design & Binary Tree
