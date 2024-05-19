@@ -2,7 +2,7 @@
 
 LeetCode problems
 
-I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository for a few more coding questions.
+I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository with more questions.
 
 ---
 
