@@ -2,6 +2,8 @@
 
 LeetCode problems
 
+I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository for a few more coding questions.
+
 ---
 
 String & Tree & Depth-First Search & Breadth-First Search & Design & Binary Tree
