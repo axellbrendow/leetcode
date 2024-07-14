@@ -5,6 +5,7 @@ LeetCode problems
 I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository with more questions.
 
 Some coding question topics:
+
 - Two Pointers
 - Fast & Slow Pointers
 - Cyclic Sort (consists of using the value as its own index to sort the array)
@@ -33,6 +34,7 @@ Some coding question topics:
   - Ceiling of a number
   - Bitonic Array Maximum
 - Merge Sort
+- Quickselect
 - Bit Manipulation
   - Two Single Numbers
   - Flip and Invert an Image
@@ -75,7 +77,6 @@ Some coding question topics:
 - Binary Indexed Tree
 - Concurrency
 - Probability and Statistics
-- Quickselect
 - Bucket Sort
 - Minimum Spanning Tree (Kruskal Algorithm)
 - Strongly Connected Component

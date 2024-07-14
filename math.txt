@@ -1,0 +1,32 @@
+Proof of arithmetic progression sum formula
+a: first element
+d: common difference
+
+S_n = (a + 0d) + (a + 1d) + (a + 2d) + ... + (a + (n - 2)d) + (a + (n - 1)d)
+Note that first term + last term = second term + penultimate term
+
+S_n = ( (a + 0d) + (a + (n - 1)d) ) * n / 2
+S_n = (a_1 + a_n) * n / 2
+
+OR
+
+S_n = a * n + (0 + 1 + 2 + ... + (n - 2) + (n - 1)) * d
+S_n = a * n + ((n - 1) * n / 2) * d
+S_n = n * (a + (n - 1) / 2 * d)
+(it's normal to get decimal numbers in the middle)
+
+---
+
+Proof of geometric progression sum formula
+a: first element
+r: ratio
+
+Formula 1 -> S_n = (a * r^0) + (a * r^1) + (a * r^2) + (a * r^3) + ... + (a * r^(n - 2)) + (a * r^(n - 1))
+
+Multiply by `r` both sides
+Formula 2 -> S_n * r = (a * r^1) + (a * r^2) + (a * r^3) + (a * r^4) + ... + (a * r^(n - 2)) + (a * r^(n - 1)) + (a * r^(n - 0))
+
+Subtract Formula 2 by Formula 1
+S_n * r - S_n = a * r^(n - 0) - a * r^0
+S_n (r - 1) = a * (r^n - 1)
+S_n = a * (r^n - 1) / (r - 1)
