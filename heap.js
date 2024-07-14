@@ -2,6 +2,11 @@
 class Heap {
   constructor(args) {
     this._values = [];
+    /**
+     * Compares `a` and `b`. If a positive value is produced, `a` will be after `b`.
+     * If a negative value is produced, `a` will be before `b`. Zero means `a` and `b`
+     * will be one after the other but they can be swapped with each other.
+     */
     this._comparator = args?.comparator || ((a, b) => a - b);
     if (args?.values) this.pushAll(args.values);
   }

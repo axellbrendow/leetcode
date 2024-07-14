@@ -7,11 +7,9 @@ interface HeapConstructorArgs<T> {
   values?: T[];
 
   /**
-   * Return 0 if `val1 == val2`.
-   *
-   * Return positive number if `val1 > val2`.
-   *
-   * Return negative number if `val1 < val2`.
+   * Compares `a` and `b`. If a positive value is produced, `a` will be after `b`.
+   * If a negative value is produced, `a` will be before `b`. Zero means `a` and `b`
+   * will be one after the other but they can be swapped with each other.
    *
    * If you want elements in ascending order, you can use `(a, b) => a - b`
    *
@@ -27,6 +25,11 @@ interface HeapConstructorArgs<T> {
 /** Min-heap by default */
 class Heap<T> {
   private _values: T[];
+  /**
+   * Compares `a` and `b`. If a positive value is produced, `a` will be after `b`.
+   * If a negative value is produced, `a` will be before `b`. Zero means `a` and `b`
+   * will be one after the other but they can be swapped with each other.
+   */
   private _comparator: Comparator<T>;
 
   constructor(args?: HeapConstructorArgs<T>) {
