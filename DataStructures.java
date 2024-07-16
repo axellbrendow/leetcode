@@ -1,12 +1,13 @@
 import java.util.Comparator;
 import java.util.List;
-import java.util.Stack;
+import java.util.Stack; // Old class based on the Vector class
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Deque;
 import java.util.Queue;
+import java.util.ArrayDeque; // Good if you want to pre allocate memory
 import java.util.PriorityQueue;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -41,7 +42,9 @@ public class DataStructures {
 
   private static void stack() {
     System.out.println("--- stack start");
-    final Stack<Integer> stack = new Stack<>();
+    // ArrayDeque could be used instead of LinkedList if you want to pre allocate
+    // space for the stack
+    final Deque<Integer> stack = new LinkedList<>();
     final var numElems = 3;
 
     for (int i = 1; i <= numElems; i++)
@@ -54,6 +57,22 @@ public class DataStructures {
 
     System.out.println("--- finish");
   }
+
+  // private static void stack() {
+  // System.out.println("--- stack start");
+  // final Stack<Integer> stack = new Stack<>();
+  // final var numElems = 3;
+
+  // for (int i = 1; i <= numElems; i++)
+  // stack.push(i);
+
+  // System.out.println(stack);
+
+  // for (int i = 1; i <= numElems; i++)
+  // System.out.printf("Removing %s %s\n", stack.pop(), stack);
+
+  // System.out.println("--- finish");
+  // }
 
   private static void map() {
     System.out.println("--- map start");
