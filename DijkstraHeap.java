@@ -7,6 +7,9 @@ import java.util.List;
 record Edge(int endNode, int weight) {
 }
 
+/**
+ * Stores a node and the distance between it and the initial vertex.
+ */
 record NodeDist(int node, int dist) {
 }
 
@@ -29,7 +32,7 @@ public class DijkstraHeap {
     while (!heap.isEmpty()) { // O(1). O(E) considering all iterations
       final var nodeDist = heap.poll(); // O(logE). O(ElogE) considering all iterations
       if (visited[nodeDist.node()]) continue;
-      // all the code below runs a single time for each node in the graph, O(V) in total
+      // all the code below runs a single time for each node in the graph, so, O(V) in total
       // all the other E - V iterations will be skipped by the if above
       visited[nodeDist.node()] = true;
 
