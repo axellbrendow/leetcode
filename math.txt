@@ -1,3 +1,11 @@
+Logarithmic properties:
+log xy = log x + log y.
+log x/y = log x - log y.
+log a^m = m log a.
+log_b(a) = log_c(a) / log_c(b)
+
+---
+
 Proof of arithmetic progression sum formula
 a: first element
 d: common difference
