@@ -10,7 +10,7 @@ record Edge(int endNode, int weight) {
 record NodeDist(int node, int dist) {
 }
 
-public class Dijkstra {
+public class DijkstraHeap {
   public static void dijkstra(Map<Integer, List<Edge>> graph, int initialVertex) {
     // V -> num of vertices
     // E -> num of edges
@@ -57,7 +57,9 @@ public class Dijkstra {
       "  A ", "B", "C", "D", "E", "F"
     }));
     System.out.println(
-      "parent: " + Arrays.toString(Arrays.stream(parent).map(Dijkstra::toChar).toArray(Character[]::new))
+      "parent: " + Arrays.toString(
+        Arrays.stream(parent).map(DijkstraHeap::toChar).toArray(Character[]::new)
+      )
     );
     System.out.println("dist  : " + Arrays.toString(dist));
     /*
