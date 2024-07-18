@@ -11,19 +11,18 @@ public class SubsetGenerator {
     final var arr = new int[]{
       1, 2, 3
     };
-    allSubsetsOf(arr, 0).forEach(System.out::println);
-    assert 1 == 2 : "false";
-    /*
-    output:
-    []
-    [3]
-    [2]
-    [3, 2]
-    [1]
-    [3, 1]
-    [2, 1]
-    [3, 2, 1]
-    */
+    assert allSubsetsOf(arr, 0).equals(
+      List.of(
+        List.of(),
+        List.of(3),
+        List.of(2),
+        List.of(3, 2),
+        List.of(1),
+        List.of(3, 1),
+        List.of(2, 1),
+        List.of(3, 2, 1)
+      )
+    );
   }
 
   private static List<List<Integer>> allSubsetsOf(int[] arr, int index) {
