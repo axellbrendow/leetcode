@@ -4,6 +4,12 @@ LeetCode problems
 
 I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository with more questions.
 
+Use the JVM flag `-enableassertions` or `-ea` to run Java files:
+
+Java 11+ -> `java -enableassertions File.java`
+
+Java < 11 -> `javac File.java && java -enableassertions File`
+
 Some coding question topics:
 
 - Two Pointers
