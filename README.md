@@ -4,11 +4,11 @@ LeetCode problems
 
 I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository with more questions.
 
-Use the JVM flag `-enableassertions` or `-ea` to run Java files:
+Use the JVM flag `-enableassertions` or `-ea` to run Java files. The VSCode config in this repository already includes this flag when running files through F5 key or run button.
 
-Java 11+ -> `java -enableassertions File.java`
+Java 11+ -> `java -ea File.java`
 
-Java < 11 -> `javac File.java && java -enableassertions File`
+Java < 11 -> `javac File.java && java -ea File`
 
 Some coding question topics:
 
