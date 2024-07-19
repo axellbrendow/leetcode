@@ -5,6 +5,11 @@ import java.util.stream.*;
 https://algo.monster/problems/palindrome_partitioning
 https://leetcode.com/problems/palindrome-partitioning/description/
 
+LeetCode only constraints:
+  1 <= s.length <= 16
+  s contains only lowercase English letters.
+    *** REALLY IMPORTANT CONSTRAINT ***, enables creating an array of 26 elements (all english letters)
+
 Partitioning A String Into Palindromes
 
 Given a string s, partition s such that every substring of the partition is a palindrome.
@@ -41,7 +46,7 @@ s = "aab"
 output = [["a", "a", "b"], ["aa", "b"]]
 */
 
-public class PalindromePartitioning {
+public class PalindromePartitioningV1 {
   private static boolean isPalindrome(String str) {
     return str.equals(new StringBuilder(str).reverse().toString());
   }
