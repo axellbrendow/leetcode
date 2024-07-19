@@ -81,14 +81,19 @@ public class DataStructures {
     System.out.printf("Map.of constants -> %s\n", map1);
 
     final Map<Integer, Integer> map2 = IntStream.range(1, 5 + 1)
-        .boxed()
-        .collect(Collectors.toMap(k -> k, k -> k * 2));
+      .boxed()
+      .collect(Collectors.toMap(k -> k, k -> k * 2));
     System.out.printf("IntStream.range & Collectors.toMap k * 2 -> %s\n", map2);
 
     final Map<Integer, List<Integer>> map3 = IntStream.range(1, 5 + 1)
-        .boxed()
-        .collect(Collectors.groupingBy(k -> k % 2));
+      .boxed()
+      .collect(Collectors.groupingBy(k -> k % 2));
     System.out.printf("IntStream.range & Collectors.groupingBy %% 2 -> %s\n", map3);
+
+    final Map<Integer, Long> map4 = IntStream.range(1, 5 + 1)
+      .boxed()
+      .collect(Collectors.groupingBy(k -> k % 2, Collectors.counting()));
+    System.out.printf("IntStream.range & Collectors.groupingBy %% 2 and counting -> %s\n", map4);
 
     System.out.println("--- finish");
   }
