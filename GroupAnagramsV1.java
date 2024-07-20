@@ -4,6 +4,10 @@ import java.util.stream.*;
 /*-
 https://leetcode.com/problems/group-anagrams/description/
 
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
 Time Limit Exceeded
 
 Input: strs = ["eat","tea","tan","ate","nat","bat"]
@@ -15,11 +19,17 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 strs = []
 output = []
 
+strs = [""]
+output = [[""]]
+
 strs = ["eat"]
 output = [["eat"]]
 
 strs = ["eat", "ate"]
 output = [["eat", "ate"]]
+
+strs = ["eat", "ate", "bat"]
+output = [["eat", "ate"], ["bat"]]
 
 brute force:
 for each string, compare it to the others and group if they are anagrams
@@ -68,6 +78,12 @@ public class GroupAnagramsV1 {
 
   public static void main(String[] args) {
     assert groupAnagrams(new String[]{}).equals(List.of());
+
+    assert groupAnagrams(
+      new String[]{
+        ""
+      }
+    ).equals(List.of(List.of("")));
 
     assert groupAnagrams(
       new String[]{
