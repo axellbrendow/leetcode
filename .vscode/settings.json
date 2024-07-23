@@ -8,5 +8,6 @@
   "java.debug.settings.vmArgs": "-enableassertions",
   "[java]": {
     "editor.tabSize": 2
-  }
+  },
+  "java.debug.settings.onBuildFailureProceed": true
 }
