@@ -52,81 +52,47 @@ public class SpiralMatrix {
     int[][] matrix;
 
     matrix = new int[][]{
-      {
-        1
-      }
+      {1}
     };
     assert spiralOrder(matrix).equals(List.of(1));
 
     matrix = new int[][]{
-      {
-        1, 2
-      }
+      { 1, 2 }
     };
     assert spiralOrder(matrix).equals(List.of(1, 2));
 
     matrix = new int[][]{
-      {
-        1
-      },
-      {
-        2
-      }
+      { 1 },
+      { 2 }
     };
     assert spiralOrder(matrix).equals(List.of(1, 2));
 
     matrix = new int[][]{
-      {
-        1, 2
-      },
-      {
-        4, 3
-      }
+      { 1, 2 },
+      { 4, 3 }
     };
     assert spiralOrder(matrix).equals(IntStream.range(1, 5).boxed().toList());
 
     matrix = new int[][]{
-      {
-        1, 2, 3
-      },
-      {
-        6, 5, 4
-      }
+      { 1, 2, 3 },
+      { 6, 5, 4 }
     };
     assert spiralOrder(matrix).equals(IntStream.range(1, 7).boxed().toList());
 
     matrix = new int[][]{
-      {
-        1, 2,
-      },
-      {
-        6, 3
-      },
-      {
-        5, 4
-      }
+      { 1, 2 },
+      { 6, 3 },
+      { 5, 4 }
     };
     assert spiralOrder(matrix).equals(IntStream.range(1, 7).boxed().toList());
 
     matrix = new int[][]{
-      {
-        1, 2, 3, 4, 5, 6
-      },
-      {
-        20, 21, 22, 23, 24, 7
-      },
-      {
-        19, 32, 33, 34, 25, 8
-      },
-      {
-        18, 31, 36, 35, 26, 9
-      },
-      {
-        17, 30, 29, 28, 27, 10
-      },
-      {
-        16, 15, 14, 13, 12, 11
-      },
+      { 1, 2, 3, 4, 5, 6 },
+      { 20, 21, 22, 23, 24, 7 },
+      { 19, 32, 33, 34, 25, 8 },
+      { 18, 31, 36, 35, 26, 9 },
+      { 17, 30, 29, 28, 27, 10 },
+      { 16, 15, 14, 13, 12, 11 },
     };
     assert spiralOrder(matrix).equals(IntStream.range(1, 37).boxed().toList());
   }
