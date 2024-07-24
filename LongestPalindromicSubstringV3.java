@@ -1,7 +1,9 @@
 class LongestPalindromicSubstringV3 {
     private static String longestPalindromeStartingFrom(int i, int j, String originalString) {
         var longestPalindrome = "";
-        while (i >= 0 && j < originalString.length() && originalString.charAt(i) == originalString.charAt(j)) {
+        while (i >= 0 && j < originalString.length() && originalString.charAt(i) == originalString.charAt(
+            j
+        )) {
             longestPalindrome = originalString.substring(i, j + 1);
             i--;
             j++;

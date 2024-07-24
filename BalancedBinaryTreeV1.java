@@ -2,25 +2,6 @@
 https://leetcode.com/problems/balanced-binary-tree/description/
 */
 
-class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
-
-  TreeNode() {
-  }
-
-  TreeNode(int val) {
-    this.val = val;
-  }
-
-  TreeNode(int val, TreeNode left, TreeNode right) {
-    this.val = val;
-    this.left = left;
-    this.right = right;
-  }
-}
-
 public class BalancedBinaryTreeV1 {
   static record IsBalancedReturn(int height, boolean isBalanced) {
   }
@@ -71,5 +52,24 @@ public class BalancedBinaryTreeV1 {
         /*right*/ new TreeNode()
       )
     ) == true;
+  }
+}
+
+class TreeNode {
+  int val;
+  TreeNode left;
+  TreeNode right;
+
+  TreeNode() {
+  }
+
+  TreeNode(int val) {
+    this.val = val;
+  }
+
+  TreeNode(int val, TreeNode left, TreeNode right) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
   }
 }

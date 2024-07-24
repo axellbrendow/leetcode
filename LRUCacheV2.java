@@ -43,63 +43,6 @@ put(0, 2) ->
   - if the key already exists in the LRUCache, then it should be update to be the most recently used.
 */
 
-class DoublyLinkedList {
-  private Node head = new Node();
-  private Node tail = new Node();
-  {
-    head.next = tail;
-    tail.prev = head;
-  }
-
-  public Node offerFirst(int key, int val) {
-    final var newNode = new Node(key, val, head, head.next);
-    head.next.prev = newNode;
-    head.next = newNode;
-    return newNode;
-  }
-
-  public void remove(final Node node) {
-    if (node == null || node == head || node == tail) return;
-    node.prev.next = node.next;
-    node.next.prev = node.prev;
-  }
-
-  public Node pollLast() {
-    if (tail.prev == head) return null;
-    final Node removedNode = tail.prev;
-    remove(removedNode);
-    return removedNode;
-  }
-
-  @Override
-  public String toString() {
-    return head.toString();
-  }
-
-  // A static nested class doesn't require an instance of its enclosing class.
-  public static class Node {
-    public int key;
-    public int val;
-    public Node prev;
-    public Node next;
-
-    public Node() {
-    }
-
-    public Node(int key, int val, Node prev, Node next) {
-      this.key = key;
-      this.val = val;
-      this.prev = prev;
-      this.next = next;
-    }
-
-    @Override
-    public String toString() {
-      return String.format("k=%s v=%s -> %s", key, val, next);
-    }
-  }
-}
-
 public class LRUCacheV2 {
   private int capacity;
   private Map<Integer, DoublyLinkedList.Node> nodeMap = new HashMap<>();
@@ -289,5 +232,62 @@ public class LRUCacheV2 {
     lRUCache.put(9, 26);
     lRUCache.put(13, 28);
     lRUCache.put(11, 26);
+  }
+}
+
+class DoublyLinkedList {
+  private Node head = new Node();
+  private Node tail = new Node();
+  {
+    head.next = tail;
+    tail.prev = head;
+  }
+
+  public Node offerFirst(int key, int val) {
+    final var newNode = new Node(key, val, head, head.next);
+    head.next.prev = newNode;
+    head.next = newNode;
+    return newNode;
+  }
+
+  public void remove(final Node node) {
+    if (node == null || node == head || node == tail) return;
+    node.prev.next = node.next;
+    node.next.prev = node.prev;
+  }
+
+  public Node pollLast() {
+    if (tail.prev == head) return null;
+    final Node removedNode = tail.prev;
+    remove(removedNode);
+    return removedNode;
+  }
+
+  @Override
+  public String toString() {
+    return head.toString();
+  }
+
+  // A static nested class doesn't require an instance of its enclosing class.
+  public static class Node {
+    public int key;
+    public int val;
+    public Node prev;
+    public Node next;
+
+    public Node() {
+    }
+
+    public Node(int key, int val, Node prev, Node next) {
+      this.key = key;
+      this.val = val;
+      this.prev = prev;
+      this.next = next;
+    }
+
+    @Override
+    public String toString() {
+      return String.format("k=%s v=%s -> %s", key, val, next);
+    }
   }
 }

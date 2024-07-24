@@ -8,25 +8,6 @@ https://leetcode.com/problems/count-good-nodes-in-binary-tree/
       null
 */
 
-class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
-
-  TreeNode() {
-  }
-
-  TreeNode(int val) {
-    this.val = val;
-  }
-
-  TreeNode(int val, TreeNode left, TreeNode right) {
-    this.val = val;
-    this.left = left;
-    this.right = right;
-  }
-}
-
 public class CountGoodNodesInBinaryTree {
   public static int goodNodes(TreeNode root, int maxValueInThePath) {
     if (root == null) return 0;
@@ -54,5 +35,24 @@ public class CountGoodNodesInBinaryTree {
     assert goodNodes(new TreeNode(0, new TreeNode(-1), null)) == 1;
     assert goodNodes(new TreeNode(0, null, new TreeNode(-1))) == 1;
     assert goodNodes(new TreeNode(0, new TreeNode(-1), new TreeNode(-1))) == 1;
+  }
+}
+
+class TreeNode {
+  int val;
+  TreeNode left;
+  TreeNode right;
+
+  TreeNode() {
+  }
+
+  TreeNode(int val) {
+    this.val = val;
+  }
+
+  TreeNode(int val, TreeNode left, TreeNode right) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
   }
 }

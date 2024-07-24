@@ -4,15 +4,6 @@ import java.util.Queue;
 import java.util.PriorityQueue;
 import java.util.List;
 
-record Edge(int endNode, int weight) {
-}
-
-/**
- * Stores a node and the distance between it and the initial vertex.
- */
-record NodeDist(int node, int dist) {
-}
-
 public class DijkstraHeap {
   public static void dijkstra(Map<Integer, List<Edge>> graph, int initialVertex) {
     // V -> num of vertices
@@ -92,4 +83,13 @@ public class DijkstraHeap {
 
     dijkstra(graph, toIndex('A'));
   }
+}
+
+record Edge(int endNode, int weight) {
+}
+
+/**
+ * Stores a node and the distance between it and the initial vertex.
+ */
+record NodeDist(int node, int dist) {
 }

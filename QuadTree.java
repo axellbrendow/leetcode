@@ -2,52 +2,6 @@
 https://leetcode.com/problems/construct-quad-tree/
 */
 
-class Node {
-  public boolean val;
-  public boolean isLeaf;
-  public Node topLeft;
-  public Node topRight;
-  public Node bottomLeft;
-  public Node bottomRight;
-
-  public Node(boolean val, boolean isLeaf, Node topLeft, Node topRight, Node bottomLeft, Node bottomRight) {
-    this.val = val;
-    this.isLeaf = isLeaf;
-    this.topLeft = topLeft;
-    this.topRight = topRight;
-    this.bottomLeft = bottomLeft;
-    this.bottomRight = bottomRight;
-  }
-
-  public Node(boolean val, boolean isLeaf) {
-    this(
-      val,
-      isLeaf,
-      /*topLeft*/ null,
-      /*topRight*/ null,
-      /*bottomLeft*/ null,
-      /*bottomRight*/ null
-    );
-  }
-
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj) return true;
-    if (obj == null) return false;
-    if (getClass() != obj.getClass()) return false;
-    Node other = (Node) obj;
-    if (this.isLeaf) {
-      return other.isLeaf && other.val == val;
-    } else {
-      return (!other.isLeaf &&
-        topLeft.equals(other.topLeft) &&
-        topRight.equals(other.topRight) &&
-        bottomLeft.equals(other.bottomLeft) &&
-        bottomRight.equals(other.bottomRight));
-    }
-  }
-}
-
 class QuadTree {
   private static boolean onlyOnesOrOnlyZeros(int line, int column, int squareSideSize, int[][] grid) {
     int firstCellValue = grid[line][column];
@@ -122,5 +76,51 @@ class QuadTree {
         /*bottomRight*/ new Node(/*val*/ false, /*isLeaf*/ true)
       )
     );
+  }
+}
+
+class Node {
+  public boolean val;
+  public boolean isLeaf;
+  public Node topLeft;
+  public Node topRight;
+  public Node bottomLeft;
+  public Node bottomRight;
+
+  public Node(boolean val, boolean isLeaf, Node topLeft, Node topRight, Node bottomLeft, Node bottomRight) {
+    this.val = val;
+    this.isLeaf = isLeaf;
+    this.topLeft = topLeft;
+    this.topRight = topRight;
+    this.bottomLeft = bottomLeft;
+    this.bottomRight = bottomRight;
+  }
+
+  public Node(boolean val, boolean isLeaf) {
+    this(
+      val,
+      isLeaf,
+      /*topLeft*/ null,
+      /*topRight*/ null,
+      /*bottomLeft*/ null,
+      /*bottomRight*/ null
+    );
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (obj == null) return false;
+    if (getClass() != obj.getClass()) return false;
+    Node other = (Node) obj;
+    if (this.isLeaf) {
+      return other.isLeaf && other.val == val;
+    } else {
+      return (!other.isLeaf &&
+        topLeft.equals(other.topLeft) &&
+        topRight.equals(other.topRight) &&
+        bottomLeft.equals(other.bottomLeft) &&
+        bottomRight.equals(other.bottomRight));
+    }
   }
 }

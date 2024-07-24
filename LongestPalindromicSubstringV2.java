@@ -6,8 +6,8 @@ class LongestPalindromicSubstringV2 {
         for (int currLength = 1; currLength <= isPalindromeBetween.length; currLength++) {
             for (int start = 0; start < isPalindromeBetween.length - currLength + 1; start++) {
                 final var end = start + currLength - 1;
-                isPalindromeBetween[start][end] = s.charAt(start) == s.charAt(end)
-                        && (currLength == 1 || currLength == 2 || isPalindromeBetween[start + 1][end - 1]);
+                isPalindromeBetween[start][end] = s.charAt(start) == s.charAt(end) && (currLength == 1 ||
+                    currLength == 2 || isPalindromeBetween[start + 1][end - 1]);
 
                 if (isPalindromeBetween[start][end] && currLength > longestPalindrome.length()) {
                     longestPalindrome = s.substring(start, end + 1);

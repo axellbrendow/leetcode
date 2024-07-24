@@ -1,35 +1,3 @@
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (!(obj instanceof ListNode))
-            return false;
-
-        ListNode l1 = this, l2 = (ListNode) obj;
-
-        while (l1 != null && l2 != null && l1.val == l2.val) {
-            l1 = l1.next;
-            l2 = l2.next;
-        }
-
-        return l1 == null && l2 == null;
-    }
-}
-
 class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int reminder = 0;
@@ -87,5 +55,37 @@ class AddTwoNumbers {
         output = solution.addTwoNumbers(l1, l2);
         testPassed = expectedOutput.equals(output);
         System.out.println("Test " + ++testNumber + (testPassed ? " succeeded" : " failed"));
+    }
+}
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof ListNode))
+            return false;
+
+        ListNode l1 = this, l2 = (ListNode) obj;
+
+        while (l1 != null && l2 != null && l1.val == l2.val) {
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+
+        return l1 == null && l2 == null;
     }
 }
