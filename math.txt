@@ -38,3 +38,48 @@ Subtract Formula 2 by Formula 1
 S_n * r - S_n = a * r^(n - 0) - a * r^0
 S_n (r - 1) = a * (r^n - 1)
 S_n = a * (r^n - 1) / (r - 1)
+
+---
+
+Fibonacci sequence recurrence relation proof | big O time complexity
+
+T(n) = T(n - 1) + T(n - 2)
+T(2) = 1
+T(1) = 1
+T(0) = 0
+
+Approach 1, just expand the terms and see the pattern:
+
+T(n) = T(n - 1) + T(n - 2)
+
+T(n - 1) and T(n - 2) are very close values, so we can simplify the equation:
+T(n) = 2T(n - 1)
+
+Now we expand T(n - 1):
+T(n) = 2*2*T(n - 2)
+T(n) = 2*2*2*T(n - 3)
+
+Approach 2, math equation tricks:
+
+T(n) = T(n - 1) + T(n - 2)
+
+T(n - 1) and T(n - 2) are very close values, so we can simplify the equation:
+T(n) = 2T(n - 1)
+
+Now we create the equation of T(n - 1) and successors:
+T(n - 1) = 2T(n - 2)
+T(n - 2) = 2T(n - 3)
+T(n - 3) = 2T(n - 4)
+...
+T(n - (n - 3)) = 2T(n - (n - 2))
+T(n - (n - 2)) = 2T(n - (n - 1))
+T(2) = 1
+T(1) = 1
+T(0) = 0
+
+Now the multiplication of all equations on the left side should be equal to the multiplication of all
+equations on the right side:
+
+T(n) * T(n - 1) * ... * T(n - (n - 3)) * T(2) * T(1)  =  2T(n - 1) * 2T(n - 2) * ... * 2T(n - (n - 3)) * T(2) * T(1)
+
+We can cut T(n - 1), T(n - 2) and many other calls to the T function. At the end, we'll have T(n) = 2^n
