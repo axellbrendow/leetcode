@@ -4,6 +4,8 @@ LeetCode problems
 
 I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository with more questions.
 
+Other sites that I recommend: [AlgoMonster](https://algo.monster/problems/stats) and [Tech Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-prep/).
+
 Use the JVM flag `-enableassertions` or `-ea` to run Java files. The VSCode config in this repository already includes this flag when running files through F5 key or run button.
 
 Java 11+ -> `java -ea File.java`
@@ -49,6 +51,7 @@ Some coding question topics:
 - K-way Merge
 - Greedy Algorithms
 - 0/1 Knapsack (Dynamic Programming)
+  - Maximum Product Subarray
   - Equal Subset Sum Partition
   - Minimum Subset Sum Difference
   - Rod Cutting
