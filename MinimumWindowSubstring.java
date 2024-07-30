@@ -45,7 +45,7 @@ s = "abddabda"
 
 public class MinimumWindowSubstring {
   public static boolean validWindow(Map<Character, Long> windowCharCount, Map<Character, Long> tCharCount) {
-    for (final var entry : tCharCount.entrySet()) {
+    for (Map.Entry<Character, Long> entry : tCharCount.entrySet()) {
       if (
         !windowCharCount.containsKey(entry.getKey())
         || windowCharCount.get(entry.getKey()) < entry.getValue()
@@ -77,6 +77,8 @@ public class MinimumWindowSubstring {
         j++;
         if (j < s.length()) {
           windowCharCount.compute(s.charAt(j), (c, oldValue) -> oldValue == null ? 1 : oldValue + 1);
+          // put and getOrDefault can replace the above too
+          // windowCharCount.put(s.charAt(j), windowCharCount.getOrDefault(s.charAt(j), 0L) + 1);
         }
       }
     }
