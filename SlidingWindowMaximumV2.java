@@ -1,9 +1,9 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.stream.IntStream;
+import java.util.*;
+import java.util.stream.*;
+
+/*-
+https://leetcode.com/problems/sliding-window-maximum/description/
+*/
 
 record ValueAndIndex(int value, int index) {
 }

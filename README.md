@@ -51,7 +51,7 @@ Some coding question topics:
 - K-way Merge
 - Greedy Algorithms
 - 0/1 Knapsack (Dynamic Programming)
-  - Maximum Product Subarray
+  - Maximum Product Subarray (important problem, kadane's algorithm)
   - Equal Subset Sum Partition
   - Minimum Subset Sum Difference
   - Rod Cutting
