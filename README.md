@@ -41,8 +41,12 @@ Some coding question topics:
 - Modified Binary Search
   - Ceiling of a number
   - Bitonic Array Maximum
-- Merge Sort
+- Mergesort
+- Quicksort
 - Quickselect
+- Countingsort
+- O(1) space
+  - Majority Element
 - Bit Manipulation
   - Two Single Numbers
   - Flip and Invert an Image
