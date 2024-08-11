@@ -2,7 +2,10 @@
 
 LeetCode problems
 
-I also have the "[Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)" repository with more questions.
+Related repositories:
+
+- [Daily Coding Problem](https://github.com/axellbrendow/daily-coding-problem)
+- [HackerRank problems](https://github.com/axellbrendow/hackerrank)
 
 Other sites that I recommend: [LintCode](https://www.lintcode.com/), [AlgoMonster](https://algo.monster/problems/stats) and [Tech Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-prep/).
 
