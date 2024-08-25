@@ -9,6 +9,7 @@
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}",
+      // "args": "< FindAllAnagramsInAStringV1.in > FindAllAnagramsInAStringV1.myout",
       "vmArgs": "-enableassertions"
     }
   ]

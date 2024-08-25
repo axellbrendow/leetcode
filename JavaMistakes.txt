@@ -1,0 +1,4 @@
+Comparing Long or Integer with equal operator ==
+These objects need to be compared with .equals() or Objects.equals()
+
+Collectors.counting() returns Long and not Integer
