@@ -4,3 +4,5 @@ These objects need to be compared with .equals() or Objects.equals()
 Collectors.counting() returns Long and not Integer
 
 Forgot to convert double expression to integer at the end (int)(1.0/2 * 3)
+
+Forgot to use a visited array or matrix in DFS or BFS algorithms
