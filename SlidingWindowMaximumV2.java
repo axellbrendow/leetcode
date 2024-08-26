@@ -32,20 +32,7 @@ public class SlidingWindowMaximumV2 {
     }
 
     public static void main(String[] args) {
-        var testNumber = 0;
-
-        var nums = new int[] { 10, 5, 2, 7, 8, 7 };
-        var k = 1;
-        var expectedOutput = new int[] { 10, 5, 2, 7, 8, 7 };
-        var output = maxSlidingWindow(nums, k);
-        var testPassed = Arrays.equals(expectedOutput, output);
-        System.out.println("Test " + ++testNumber + (testPassed ? " succeeded" : " failed"));
-
-        nums = new int[] { 10, 5, 2, 7, 8, 7 };
-        k = 3;
-        expectedOutput = new int[] { 10, 7, 8, 8 };
-        output = maxSlidingWindow(nums, k);
-        testPassed = Arrays.equals(expectedOutput, output);
-        System.out.println("Test " + ++testNumber + (testPassed ? " succeeded" : " failed"));
+        assert Arrays.equals(maxSlidingWindow(new int[]{10,5,2,7,8,7}, 1), new int[]{10,5,2,7,8,7});
+        assert Arrays.equals(maxSlidingWindow(new int[]{10,5,2,7,8,7}, 3), new int[]{10,7,8,8});
     }
 }
