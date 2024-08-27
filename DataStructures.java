@@ -1,16 +1,5 @@
-import java.util.Comparator;
-import java.util.List;
-import java.util.Stack; // Old class based on the Vector class
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Deque;
-import java.util.Queue;
-import java.util.ArrayDeque; // Good if you want to pre allocate memory
-import java.util.PriorityQueue;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.*;
+import java.util.stream.*;
 
 public class DataStructures {
   public static void main(String[] args) {
@@ -84,6 +73,17 @@ public class DataStructures {
       .boxed()
       .collect(Collectors.toMap(k -> k, k -> k * 2));
     System.out.printf("IntStream.range & Collectors.toMap k * 2 -> %s\n", map2);
+
+    final Map<Integer, List<Integer>> map2_2 = IntStream.of(1, 1, 2, 3, 3, 3)
+      .boxed()
+      .collect(
+        Collectors.toMap(
+          k -> k,
+          k -> List.of(k * 2),
+          (val1, val2) -> Stream.concat(val1.stream(), val2.stream()).toList()
+        )
+      );
+    System.out.printf("IntStream.of(1, 1, 2, 3, 3, 3) & Collectors.toMap k * 2 -> %s\n", map2_2);
 
     final Map<Integer, List<Integer>> map3 = IntStream.range(1, 5 + 1)
       .boxed()
