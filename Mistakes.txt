@@ -7,3 +7,5 @@ Binary search doesn't necessarily need mid and array[mid]. Sometimes mid itself 
 Division by 0
 
 Pay attention to overflows in SUMS and MULTIPLICATIONS
+
+Considering that node.next.next is safe to access

@@ -2,6 +2,8 @@ package myjava;
 
 import java.util.*;
 
+import myjava.shared.ListNode;
+
 /*-
 https://leetcode.com/problems/reorder-list/description/
 
@@ -60,7 +62,7 @@ The number of nodes in the list is in the range [1, 5 * 10^4].
 1 <= Node.val <= 1000
 */
 
-public class ReorderList {
+public class ReorderListV1 {
   public static void reorderList(ListNode head) {
     Map<Integer, ListNode> indexMap = new HashMap<>();
     ListNode node = head;
