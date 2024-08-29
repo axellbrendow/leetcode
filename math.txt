@@ -1,3 +1,46 @@
+Names related to fractions:
+
+dividend = divisor * quotient + remainder
+
+---
+
+XOR properties:
+
+Commutative : A ⊕ B = B ⊕ A
+This is clear from the definition of XOR: it doesn't matter which way round you order the two inputs.
+
+Associative : A ⊕ ( B ⊕ C ) = ( A ⊕ B ) ⊕ C
+This means that XOR operations can be chained together and the order doesn't matter. If you aren't
+convinced of the truth of this statement, try drawing the truth tables.
+
+k	p	q	  p^q   (p ∧ q) ∧ k
+F	F	F	   F        F
+F	F	T	   T        F
+F	T	F	   T        F
+F	T	T	   F        F
+T	F	F	   F        F
+T	F	T	   T        F
+T	T	F	   T        F
+T	T	T	   F        T
+
+p	q	k	  q^k   p ∧ (q ∧ k)
+F	F	F	   F        F
+F	F	T	   T        F
+F	T	F	   T        F
+F	T	T	   F        F
+T	F	F	   F        F
+T	F	T	   T        F
+T	T	F	   T        F
+T	T	T	   F        T
+
+Identity element : A ⊕ 0 = A
+This means that any value XOR'd with zero is left unchanged. 1 ^ 0 = 1 and 0 ^ 0 = 0
+
+Self-inverse : A ⊕ A = 0
+This means that any value XOR'd with itself gives zero.
+
+---
+
 Logarithmic properties:
 log xy = log x + log y.
 log x/y = log x - log y.
