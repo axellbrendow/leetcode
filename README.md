@@ -23,7 +23,10 @@ javac myjava/AddTwoNumbers.java && java -ea myjava/AddTwoNumbers  # works for ja
 ## Some coding question topics:
 
 - Two Pointers
-- Fast & Slow Pointers
+  - Fast & Slow Pointers
+    - Move slow by 1 and fast by 2
+    - Move slow by 1 and fast by n
+    - Move only fast until some point (e.g. distance between slow and fast is k)
 - Cyclic Sort (consists of using the value as its own index to sort the array)
   - Find all Missing Numbers
   - Find all Duplicate Numbers
