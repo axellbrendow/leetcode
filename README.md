@@ -9,13 +9,18 @@ Related repositories:
 
 Other sites that I recommend: [LintCode](https://www.lintcode.com/), [NeetCode 150](https://neetcode.io/practice), [AlgoMonster](https://algo.monster/problems/stats) and [Tech Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-prep/).
 
+## How to run Java files ?
+
 Use the JVM flag `-enableassertions` or `-ea` to run Java files. The VSCode config in this repository already includes this flag when running files through F5 key or run button.
 
-Java 11+ -> `java -ea File.java`
+```sh
+cd java
+javac ./**/shared/*.java  # compiles common files
+java -ea myjava/AddTwoNumbers.java  # works for java >= 11
+javac myjava/AddTwoNumbers.java && java -ea myjava/AddTwoNumbers  # works for java < 11
+```
 
-Java < 11 -> `javac File.java && java -ea File`
-
-Some coding question topics:
+## Some coding question topics:
 
 - Two Pointers
 - Fast & Slow Pointers
@@ -98,6 +103,10 @@ Some coding question topics:
 - Strongly Connected Component
 - Eulerian Circuit
 - Radix Sort
+
+## Problems I did when I was creating a Google Doc for each problem:
+
+> Now I just use comments /\*\*/ in the source files before writing the code
 
 ---
 

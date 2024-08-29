@@ -10,5 +10,6 @@
     "editor.formatOnSave": false,
     "editor.tabSize": 2
   },
-  "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.dependency.packagePresentation": "hierarchical"
 }

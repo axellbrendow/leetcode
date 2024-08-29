@@ -2,6 +2,8 @@
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  // Can be used to redirect input/output inside each configuration:
+  // "args": "< FindAllAnagramsInAStringV1.in > FindAllAnagramsInAStringV1.myout",
   "version": "0.2.0",
   "configurations": [
     {
@@ -11,6 +13,5 @@
       "mainClass": "${file}",
       "vmArgs": "-enableassertions"
     }
-    // "args": "< FindAllAnagramsInAStringV1.in > FindAllAnagramsInAStringV1.myout",
   ]
 }
