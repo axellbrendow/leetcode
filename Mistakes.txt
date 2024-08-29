@@ -8,4 +8,9 @@ Division by 0
 
 Pay attention to overflows in SUMS and MULTIPLICATIONS
 
-Considering that node.next.next is safe to access
+Not thinking carefully about changing the pointers of all nodes in a LinkedList
+  Always make sure to change the pointers to where you would expect them to be
+
+Considering that node.next or node.next.next is safe to access or assign
+
+Creating a head ListNode and moving head instead of using head and curr and moving curr only
