@@ -32,6 +32,16 @@ n == nums.length
 All the numbers of nums are unique.
 
 Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
+
+---
+
+This question uses 3 properties of XOR:
+Associative : A ⊕ ( B ⊕ C ) = ( A ⊕ B ) ⊕ C
+Self-inverse : A ⊕ A = 0
+Identity element : A ⊕ 0 = A
+
+The idea is to XOR all elements of the array with all numbers from 0 to n,
+that will eliminate all elements except the missing element
 */
 
 public class MissingNumber {
