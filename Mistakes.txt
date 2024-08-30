@@ -6,7 +6,8 @@ Binary search doesn't necessarily need mid and array[mid]. Sometimes mid itself 
 
 Division by 0
 
-Pay attention to overflows in SUMS and MULTIPLICATIONS
+Pay attention to overflows in SUMS, SUBTRACTIONS (YES), MULTIPLICATIONS and DIVISIONS
+NOT ONLY ON ARRAY QUESTIONS, PAY ATTENTION TO THIS IN ALL TYPES OF QUESTIONS!!!
 
 Not thinking carefully about changing the pointers of all nodes in a LinkedList
   Always make sure to change the pointers to where you would expect them to be
@@ -14,3 +15,8 @@ Not thinking carefully about changing the pointers of all nodes in a LinkedList
 Considering that node.next or node.next.next is safe to access or assign
 
 Creating a head ListNode and moving head instead of using head and curr and moving curr only
+
+Returning left subtree path or right subtree path as paths that pass through the current node incorrectly
+e.g. return Math.max(root.val, *leftPath*, *rightPath*, root.val + leftPath + rightPath)
+That is invalid. root.val should always be in the sum. If root.val is not in the sum, than that's not a valid
+path to return to the parent
