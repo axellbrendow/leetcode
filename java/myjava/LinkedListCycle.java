@@ -1,6 +1,6 @@
 package myjava;
 
-import java.util.List;
+import java.util.*;
 
 import myjava.shared.ListNode;
 
