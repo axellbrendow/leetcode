@@ -41,6 +41,33 @@ n = board[i].length
 board and word consists of only lowercase and uppercase English letters.
 
 Follow up: Could you use search pruning to make your solution faster with a larger board?
+
+---
+
+word = "APPQ"
+board =
+Q P A
+C P W
+W A W
+
+word = "APPA"
+board =
+Q *P *A *P
+C *P W *P
+W W W *A
+
+word = "APPA"
+board =
+Q *P *A *P
+P *P W *P
+A W W *A
+
+"ABCEFSADEESE"
+[
+    ["A","B","C","E"],
+    ["S","F","E","S"],
+    ["A","D","E","E"]
+]
 */
 
 public class WordSearch {
