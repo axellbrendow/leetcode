@@ -20,3 +20,5 @@ Returning left subtree path or right subtree path as paths that pass through the
 e.g. return Math.max(root.val, *leftPath*, *rightPath*, root.val + leftPath + rightPath)
 That is invalid. root.val should always be in the sum. If root.val is not in the sum, than that's not a valid
 path to return to the parent
+
+Not ensuring that heaps will always have k elements at least. For example: calling heap.poll() even though heap.size() < k

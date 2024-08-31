@@ -33,6 +33,10 @@ Constraints:
 
 1 <= k <= points.length <= 10^4
 -10^4 <= xi, yi <= 10^4
+
+---
+
+Quickselect can be used too
 */
 
 public class KClosestPointsToOrigin {
