@@ -52,15 +52,15 @@ public class WordLadder {
     if (!wordList.contains(beginWord)) wordList.add(beginWord);
     Map<String, List<String>> graph = buildGraph(wordList);
     if (!graph.containsKey(endWord) || graph.get(beginWord) == null) return 0;
-    Map<String, Boolean> visited = wordList.stream().collect(Collectors.toMap(word -> word, word -> false));
+    Set<String> visited = new HashSet<>();
     Map<String, Integer> levelMap = new HashMap<>();
     levelMap.put(endWord, 1);
     Queue<String> queue = new LinkedList<>();
     queue.offer(endWord);
     while (!queue.isEmpty()) {
       String word = queue.poll();
-      if (visited.get(word)) continue;
-      visited.put(word, true);
+      if (visited.contains(word)) continue;
+      visited.add(word);
       int level = levelMap.get(word);
       if (beginWord.equals(word)) return level;
       for (String child : graph.get(word)) {
