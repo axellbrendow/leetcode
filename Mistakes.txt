@@ -24,3 +24,5 @@ That is invalid. root.val should always be in the sum. If root.val is not in the
 path to return to the parent
 
 Not ensuring that heaps will always have k elements at least. For example: calling heap.poll() even though heap.size() < k
+
+Assuming a flight can't happen multiple times from A to B
