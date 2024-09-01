@@ -53,20 +53,18 @@ public class WordLadder {
     Map<String, List<String>> graph = buildGraph(wordList);
     if (!graph.containsKey(endWord) || graph.get(beginWord) == null) return 0;
     Set<String> visited = new HashSet<>();
-    Map<String, Integer> levelMap = new HashMap<>();
-    levelMap.put(endWord, 1);
+    int level = 0;
     Queue<String> queue = new LinkedList<>();
     queue.offer(endWord);
     while (!queue.isEmpty()) {
-      String word = queue.poll();
-      if (visited.contains(word)) continue;
-      visited.add(word);
-      int level = levelMap.get(word);
-      if (beginWord.equals(word)) return level;
-      for (String child : graph.get(word)) {
-        Integer childLevel = levelMap.get(child);
-        if (childLevel == null || level + 1 < childLevel) {
-          levelMap.put(child, level + 1);
+      level++;
+      int levelSize = queue.size();
+      for (int i = 0; i < levelSize; i++) {
+        String word = queue.poll();
+        if (visited.contains(word)) continue;
+        visited.add(word);
+        if (beginWord.equals(word)) return level;
+        for (String child : graph.get(word)) {
           queue.offer(child);
         }
       }
