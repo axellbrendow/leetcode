@@ -44,14 +44,14 @@ public class NumberOfIslands {
   }
 
   public static void union(
-    int[] parent, int[] islands, int nlines, int ncols, int newI, int newJ, int oldI, int oldJ
+    int[] parent, int[] islands, int nlines, int ncols, int currI, int currJ, int prevI, int prevJ
   ) {
-    int newIndex = ncols * newI + newJ;
-    int oldIndex = ncols * oldI + oldJ;
-    int newGroupLeader = find(parent, newIndex);
-    int oldGroupLeader = find(parent, oldIndex);
-    if (newGroupLeader != oldGroupLeader) {
-      parent[oldGroupLeader] = newGroupLeader;
+    int currIndex = ncols * currI + currJ;
+    int prevIndex = ncols * prevI + prevJ;
+    int currGroupLeader = find(parent, currIndex);
+    int prevGroupLeader = find(parent, prevIndex);
+    if (currGroupLeader != prevGroupLeader) {
+      parent[currGroupLeader] = prevGroupLeader;
       islands[0]--;
     }
   }
