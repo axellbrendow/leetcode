@@ -62,7 +62,7 @@ coins = [7,9,33]
 four 7s eight 9s
 */
 
-public class CoinChange {
+public class CoinChangeV1 {
   public static int coinChange(int[] coins, int amount) {
     Arrays.sort(coins);
     int[] dp = new int[amount + 1];
