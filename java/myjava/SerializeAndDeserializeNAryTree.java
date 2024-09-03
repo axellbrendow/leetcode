@@ -19,18 +19,20 @@ import java.util.*;
 public class SerializeAndDeserializeNAryTree {
   public String serialize(DirectedGraphNode root) {
     if (root == null) return null;
-    String str = "" + root.label;
+    StringBuilder strBuilder = new StringBuilder("" + root.label);
     Queue<DirectedGraphNode> queue = new LinkedList<>();
     queue.offer(root);
     while (!queue.isEmpty()) {
       DirectedGraphNode node = queue.poll();
-      str += "#" + node.neighbors.size();
+      strBuilder.append('#');
+      strBuilder.append(node.neighbors.size());
       for (DirectedGraphNode child : node.neighbors) {
-        str += "," + child.label;
+        strBuilder.append(',');
+        strBuilder.append(child.label);
         queue.offer(child);
       }
     }
-    return str;
+    return strBuilder.toString();
   }
 
   public DirectedGraphNode deserialize(String data) {
