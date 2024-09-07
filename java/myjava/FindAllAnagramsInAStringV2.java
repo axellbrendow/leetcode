@@ -51,9 +51,9 @@ public class FindAllAnagramsInAStringV2 {
     assert findAnagrams("abcaacb", "abc").equals(List.of(0, 1, 4));
     assert findAnagrams("abcabcabcabcabc", "abc").equals(IntStream.rangeClosed(0, 12).boxed().toList());
 
-    try (final var bufferedReader = Files.newBufferedReader(Paths.get("FindAllAnagramsInAStringV1.in"))) {
-      String s = bufferedReader.readLine();
-      String p = bufferedReader.readLine();
+    try (final var br = Files.newBufferedReader(Paths.get("java/myjava/FindAllAnagramsInAStringV1.in"))) {
+      String s = br.readLine();
+      String p = br.readLine();
       assert findAnagrams(s, p).equals(IntStream.rangeClosed(0, 10062).boxed().toList());
     }
   }

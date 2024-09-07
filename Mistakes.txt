@@ -11,6 +11,8 @@ Division by 0
 Pay attention to overflows in SUMS, SUBTRACTIONS (YES), MULTIPLICATIONS and DIVISIONS
 NOT ONLY ON ARRAY QUESTIONS, PAY ATTENTION TO THIS IN ALL TYPES OF QUESTIONS!!!
 
+Not thinking "What if indexOf doesn't encounter anything or if it encounters something outside the expected range"
+
 Not thinking carefully about changing the pointers of all nodes in a LinkedList
   Always make sure to change the pointers to where you would expect them to be
 
