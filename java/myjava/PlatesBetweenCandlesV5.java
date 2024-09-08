@@ -55,8 +55,8 @@ firstCandleToTheLeft =  ---3444779 10 10 10 10 10 15 15
 public class PlatesBetweenCandlesV5 {
   public static int[] platesBetweenCandles(String s, int[][] queries) {
     int[] prefixSum = new int[s.length()];
-    int[] firstCandleToTheRight = new int[s.length()];
     int[] firstCandleToTheLeft = new int[s.length()];
+    int[] firstCandleToTheRight = new int[s.length()];
 
     prefixSum[0] = s.charAt(0) == '*' ? 1 : 0;
     firstCandleToTheLeft[0] = s.charAt(0) == '*' ? -1 : 0;
