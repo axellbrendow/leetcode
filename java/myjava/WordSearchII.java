@@ -46,38 +46,38 @@ All the strings of words are unique.
 }
 */
 
-class Trie {
-  private Node trie = new Node();
-
-  public Trie(String[] strs) {
-    for (String str : strs) add(str);
-  }
-
-  public void add(String str) {
-    Node node = trie;
-    for (char c : str.toCharArray()) {
-      Node charNode = node.charMap.get(c);
-      if (charNode == null) node.charMap.put(c, charNode = new Node());
-      node = charNode;
-    }
-  }
-
-  public boolean search(String str) {
-    if (str.isEmpty()) return false;
-    Node node = trie;
-    for (char c : str.toCharArray()) {
-      node = node.charMap.get(c);
-      if (node == null) return false;
-    }
-    return true;
-  }
-
-  private static class Node {
-    Map<Character, Node> charMap = new HashMap<>();
-  }
-}
-
 public class WordSearchII {
+  private static class Trie {
+    private Node trie = new Node();
+
+    public Trie(String[] strs) {
+      for (String str : strs) add(str);
+    }
+
+    public void add(String str) {
+      Node node = trie;
+      for (char c : str.toCharArray()) {
+        Node charNode = node.charMap.get(c);
+        if (charNode == null) node.charMap.put(c, charNode = new Node());
+        node = charNode;
+      }
+    }
+
+    public boolean search(String str) {
+      if (str.isEmpty()) return false;
+      Node node = trie;
+      for (char c : str.toCharArray()) {
+        node = node.charMap.get(c);
+        if (node == null) return false;
+      }
+      return true;
+    }
+
+    private static class Node {
+      Map<Character, Node> charMap = new HashMap<>();
+    }
+  }
+
   public static void findWords(
     char[][] board,
     Set<String> notFoundSet,
