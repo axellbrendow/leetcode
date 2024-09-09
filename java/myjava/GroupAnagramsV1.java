@@ -80,42 +80,17 @@ public class GroupAnagramsV1 {
 
   public static void main(String[] args) {
     assert groupAnagrams(new String[]{}).equals(List.of());
+    assert groupAnagrams(new String[]{""}).equals(List.of(List.of("")));
+    assert groupAnagrams(new String[]{"ate"}).equals(List.of(List.of("ate")));
+    assert groupAnagrams(new String[]{"ate", "tea"}).equals(List.of(List.of("ate", "tea")));
 
-    assert groupAnagrams(
-      new String[]{
-        ""
-      }
-    ).equals(List.of(List.of("")));
-
-    assert groupAnagrams(
-      new String[]{
-        "ate"
-      }
-    ).equals(List.of(List.of("ate")));
-
-    assert groupAnagrams(
-      new String[]{
-        "ate", "tea"
-      }
-    ).equals(List.of(List.of("ate", "tea")));
-
-    assert groupAnagrams(
-      new String[]{
-        "ate", "tea", "bat"
-      }
-    ).equals(List.of(List.of("ate", "tea"), List.of("bat")));
+    assert groupAnagrams(new String[]{"ate", "tea", "bat"}).equals(
+      List.of(List.of("ate", "tea"), List.of("bat"))
+    );
 
     // Code that works with "characters" longer than 2 bytes (2 UTF-16 values like emojis)
     "😃abc".codePoints() // stream of integers
-      .mapToObj(
-        codePoint -> new String(
-          new int[]{
-            codePoint
-          },
-          /*offset*/ 0,
-          /*count*/ 1
-        )
-      )
+      .mapToObj(codePoint -> new String(new int[]{codePoint}, /*offset*/ 0, /*count*/ 1))
       .forEach(System.out::println);
     /*-
     The code above prints:

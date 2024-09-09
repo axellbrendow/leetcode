@@ -41,38 +41,17 @@ public class GroupAnagramsV2 {
   }
 
   public static List<List<String>> groupAnagrams(String[] strs) {
-    return new ArrayList<>(
-      Arrays.stream(strs).collect(
-        Collectors.groupingBy(str -> sortStr(str))
-      ).values()
-    );
+    return new ArrayList<>(Arrays.stream(strs).collect(Collectors.groupingBy(str -> sortStr(str))).values());
   }
 
   public static void main(String[] args) {
     assert groupAnagrams(new String[]{}).equals(List.of());
+    assert groupAnagrams(new String[]{""}).equals(List.of(List.of("")));
+    assert groupAnagrams(new String[]{"ate"}).equals(List.of(List.of("ate")));
+    assert groupAnagrams(new String[]{"ate", "tea"}).equals(List.of(List.of("ate", "tea")));
 
-    assert groupAnagrams(
-      new String[]{
-        ""
-      }
-    ).equals(List.of(List.of("")));
-
-    assert groupAnagrams(
-      new String[]{
-        "ate"
-      }
-    ).equals(List.of(List.of("ate")));
-
-    assert groupAnagrams(
-      new String[]{
-        "ate", "tea"
-      }
-    ).equals(List.of(List.of("ate", "tea")));
-
-    assert groupAnagrams(
-      new String[]{
-        "ate", "tea", "bat"
-      }
-    ).equals(List.of(List.of("ate", "tea"), List.of("bat")));
+    assert groupAnagrams(new String[]{"ate", "tea", "bat"}).equals(
+      List.of(List.of("ate", "tea"), List.of("bat"))
+    );
   }
 }
