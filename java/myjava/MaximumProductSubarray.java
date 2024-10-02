@@ -49,9 +49,16 @@ prefix[]{-1, -2, 4, 0, 2, 4, -4, 4, -8, -8, -16, -1024}
 
 public class MaximumProductSubarray {
   public static int maxProduct(int[] nums) {
-    int product = 1, maxProduct = 0;
-    for (int i = 0; i < nums.length; i++) {
-      // maxProduct = 
+    int maxProduct = nums[0];
+    int leftToRight = 1, rightToLeft = 1;
+    for (int i = 0, j = nums.length - 1; i < nums.length; i++, j--) {
+      leftToRight *= nums[i];
+      maxProduct = Math.max(maxProduct, leftToRight);
+      if (leftToRight == 0) leftToRight = 1;
+
+      rightToLeft *= nums[j];
+      maxProduct = Math.max(maxProduct, rightToLeft);
+      if (rightToLeft == 0) rightToLeft = 1;
     }
     return maxProduct;
   }
