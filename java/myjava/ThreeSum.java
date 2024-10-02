@@ -30,12 +30,27 @@ Input: nums = [-4,-3,-1,0,1,5,7]
 
 public class ThreeSum {
   public static List<List<Integer>> threeSum(int[] nums) {
-    //
+    List<List<Integer>> result = new ArrayList<>();
+    Arrays.sort(nums);
+    for (int i = 0; i < nums.length; i++) {
+      if (i > 0 && nums[i - 1] == nums[i]) continue;
+      int j = i + 1, k = nums.length - 1;
+      while (j < k) {
+        if (nums[i] + nums[j] + nums[k] > 0) k--;
+        else if (nums[i] + nums[j] + nums[k] < 0) j++;
+        else {
+          result.add(List.of(nums[i], nums[j], nums[k]));
+          while (j + 1 < nums.length && nums[j] == nums[j + 1]) j++;
+          j++;
+        }
+      }
+    }
+    return result;
   }
 
   public static void main(String[] args) {
-    assert threeSum(new int[]{-1,0,1,2,-1,-4}).equals(List.of(List.of(-1,-1,2), List.of(-1,0,1)));
-    assert threeSum(new int[]{0,1,1}).equals(List.of());
-    assert threeSum(new int[]{0,0,0}).equals(List.of(List.of(0,0,0)));
+    assert threeSum(new int[]{-1, 0, 1, 2, -1, -4}).equals(List.of(List.of(-1, -1, 2), List.of(-1, 0, 1)));
+    assert threeSum(new int[]{0, 1, 1}).equals(List.of());
+    assert threeSum(new int[]{0, 0, 0}).equals(List.of(List.of(0, 0, 0)));
   }
 }
