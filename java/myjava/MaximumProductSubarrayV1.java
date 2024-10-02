@@ -47,7 +47,7 @@ arr[] = {-1, 2, -2, 0, 2, 2, -1, -1, -2, 1, 2, 64}
 prefix[]{-1, -2, 4, 0, 2, 4, -4, 4, -8, -8, -16, -1024}
 */
 
-public class MaximumProductSubarray {
+public class MaximumProductSubarrayV1 {
   public static int maxProduct(int[] nums) {
     int maxProduct = nums[0];
     int leftToRight = 1, rightToLeft = 1;
