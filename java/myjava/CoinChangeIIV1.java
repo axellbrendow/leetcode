@@ -52,7 +52,7 @@ amount  4
 amount  5
 */
 
-public class CoinChangeII {
+public class CoinChangeIIV1 {
   public static int change(int amount, int[] coins, int[][] dp, int coinIndex) {
     if (amount == 0) return 1;
     if (amount < 0 || coinIndex >= coins.length) return 0;
