@@ -45,7 +45,7 @@ s = "abddabda"
           i j (while sliding window is invalid, increase j by 1)
 */
 
-public class MinimumWindowSubstring {
+public class MinimumWindowSubstringV1 {
   public static boolean validWindow(Map<Character, Long> windowCharCount, Map<Character, Long> tCharCount) {
     for (Map.Entry<Character, Long> entry : tCharCount.entrySet()) {
       if (
