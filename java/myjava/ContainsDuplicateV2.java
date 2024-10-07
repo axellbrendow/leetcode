@@ -1,5 +1,9 @@
 package myjava;
 
+import java.util.*;
+import java.util.stream.*;
+import java.util.function.*;
+
 /*-
 https://leetcode.com/problems/contains-duplicate/description/
 
@@ -29,27 +33,12 @@ Constraints:
 */
 
 public class ContainsDuplicateV2 {
-  // Boyer–Moore majority vote algorithm
-  private static int getMostFrequentElement(int[] nums) {
-    int counter = 1, element = nums[0];
-    for (int i = 1; i < nums.length; i++) {
-      if (element == nums[i]) counter++;
-      else counter--;
-
-      if (counter == 0) {
-        counter = 1;
-        element = nums[i];
-      }
-    }
-    return element;
-  }
-
   public static boolean containsDuplicate(int[] nums) {
-    int mostFrequentElement = getMostFrequentElement(nums);
-    int count = 0;
-    for (int num : nums)
-      if (num == mostFrequentElement) count++;
-    return count >= 2;
+    Arrays.sort(nums);
+    for (int i = 1; i < nums.length; i++) {
+      if (nums[i] == nums[i - 1]) return true;
+    }
+    return false;
   }
 
   public static void main(String[] args) {
