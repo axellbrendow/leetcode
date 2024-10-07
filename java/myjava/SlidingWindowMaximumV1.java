@@ -7,22 +7,22 @@ import java.util.stream.*;
 https://leetcode.com/problems/sliding-window-maximum/description/
 */
 
-public class SlidingWindowMaximumV2 {
-  private static void addToDeque(Deque<Integer> deque, int value) {
-    while (!deque.isEmpty() && deque.peekLast() < value) deque.pollLast();
-    deque.offerLast(value);
+public class SlidingWindowMaximumV1 {
+  private static record ValueAndIndex(int value, int index) {
   }
 
   public static int[] maxSlidingWindow(int[] nums, int k) {
     int[] result = new int[nums.length - k + 1];
     int resultCursor = 0;
-    Deque<Integer> deque = new LinkedList<>();
-    for (int i = 0; i < k; i++) addToDeque(deque, nums[i]);
-    result[resultCursor++] = deque.peekFirst();
+    Queue<ValueAndIndex> heap = new PriorityQueue<>(
+      (valueAndIndex1, valueAndIndex2) -> valueAndIndex2.value() - valueAndIndex1.value()
+    );
+    for (int i = 0; i < k; i++) heap.offer(new ValueAndIndex(nums[i], i));
+    result[resultCursor++] = heap.peek().value();
     for (int i = k; i < nums.length; i++) {
-      addToDeque(deque, nums[i]);
-      if (deque.peekFirst() == nums[i - k]) deque.pollFirst();
-      result[resultCursor++] = deque.peekFirst();
+      heap.offer(new ValueAndIndex(nums[i], i));
+      while (heap.peek().index() <= i - k) heap.poll();
+      result[resultCursor++] = heap.peek().value();
     }
     return result;
   }
