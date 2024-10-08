@@ -33,7 +33,7 @@ conquer approach, which is more subtle.
 Input: nums = [-2,1,-3,4,-1,2,1,-6,4]
 */
 
-public class MaximumSubarray {
+public class MaximumSubarrayV2 {
   public static int maxSubArray(int[] nums) {
     int maxSubArrSum = nums[0], subArrSum = 0;
     for (int num : nums) {
