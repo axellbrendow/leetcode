@@ -51,15 +51,18 @@ public class MaximumProductSubarrayV2 {
   public static int maxProduct(int[] nums) {
     int maxProduct = nums[0], currMinProduct = 1, currMaxProduct = 1;
     for (int i = 0; i < nums.length; i++) {
-      int temp = currMinProduct;
+      int currMinProductTmp = currMinProduct;
       currMinProduct = Math.min(nums[i], Math.min(nums[i] * currMinProduct, nums[i] * currMaxProduct));
-      currMaxProduct = Math.max(nums[i], Math.max(nums[i] * currMaxProduct, nums[i] * temp));
+      currMaxProduct = Math.max(nums[i], Math.max(nums[i] * currMaxProduct, nums[i] * currMinProductTmp));
       maxProduct = Math.max(maxProduct, currMaxProduct);
     }
     return maxProduct;
   }
 
   public static void main(String[] args) {
+    assert maxProduct(new int[]{-1}) == -1;
+    assert maxProduct(new int[]{-2, 0, -1}) == 0;
+    assert maxProduct(new int[]{2, 3, -2, 4}) == 6;
     assert maxProduct(new int[]{-1, 2, -2, 0, 2, 2, -1, -1, 1, 2, 1024}) == 8192;
   }
 }

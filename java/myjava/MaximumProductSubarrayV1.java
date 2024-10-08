@@ -64,6 +64,9 @@ public class MaximumProductSubarrayV1 {
   }
 
   public static void main(String[] args) {
+    assert maxProduct(new int[]{-1}) == -1;
+    assert maxProduct(new int[]{-2, 0, -1}) == 0;
+    assert maxProduct(new int[]{2, 3, -2, 4}) == 6;
     assert maxProduct(new int[]{-1, 2, -2, 0, 2, 2, -1, -1, 1, 2, 1024}) == 8192;
   }
 }
