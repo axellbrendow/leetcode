@@ -1,8 +1,12 @@
 Bit shift operator does not move the sign bit, so -1 >> 1 is -1. You need to use
 unsigned bit shift operator >>> to disconsider the sign bit
 
+dividend | divisor
+           -------
+reminder   quotient
+
 When the dividend is negative, the remainder is negative:
--7 % 2 = -1
+dividend % divisor = reminder
 -7 % -2 = -1
 When the dividend is positive, the remainder is positive:
 7 % -2 = 1

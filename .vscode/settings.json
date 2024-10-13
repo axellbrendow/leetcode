@@ -8,7 +8,8 @@
   "java.debug.settings.vmArgs": "-enableassertions",
   "editor.formatOnSave": false,
   "[java]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
   },
   "java.debug.settings.onBuildFailureProceed": true,
   "java.dependency.packagePresentation": "hierarchical"

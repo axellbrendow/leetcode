@@ -10,6 +10,10 @@ Arrangements: selection of objects where the order inside the group is important
 
 Names related to fractions:
 
+dividend | divisor
+           -------
+reminder   quotient
+
 dividend = divisor * quotient + remainder
 
 ---
