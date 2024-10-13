@@ -1,6 +1,8 @@
 package myjava;
 
 /*-
+https://leetcode.com/problems/cherry-pickup/description/
+
 0   1   1   1
 1   1   1   1
 1   1   1   1
@@ -32,6 +34,7 @@ public class CherryPickupV1 {
     int left = cherryPickupSecondPath(grid, nlines, ncols, i, j - 1);
     int up = cherryPickupSecondPath(grid, nlines, ncols, i - 1, j);
     if (left == -1 && up == -1) return -1;
+    if (cherryCount > 0) grid[i][j] = CHERRY;
     return cherryCount + Math.max(left == -1 ? 0 : left, up == -1 ? 0 : up);
   }
 
@@ -50,6 +53,7 @@ public class CherryPickupV1 {
     int right = cherryPickupFirstPath(grid, nlines, ncols, i, j + 1);
     int down = cherryPickupFirstPath(grid, nlines, ncols, i + 1, j);
     if (right == -1 && down == -1) return -1;
+    if (cherryCount > 0) grid[i][j] = CHERRY;
     return cherryCount + Math.max(right == -1 ? 0 : right, down == -1 ? 0 : down);
   }
 
